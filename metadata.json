@@ -1,0 +1,7 @@
+{
+  "name": "MAPPIA — Mapas Mentais para Grandes Conquistas",
+  "description": "Loja digital premium de mapas mentais em PDF para o ENEM 2026, estudos, bíblicos, inglês e programação. Estude, revise, memorize e conquiste.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
