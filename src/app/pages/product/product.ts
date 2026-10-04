@@ -118,7 +118,7 @@ import { ProductCard } from '../../components/product-card/product-card';
                     <span class="text-xs text-slate-500 ml-2">à vista no Pix ou cartão</span>
                   </div>
                   <div class="text-[11px] text-emerald-700 font-medium mt-1">
-                    ou em até 6x no cartão de crédito
+                    ou em até 4x no cartão de crédito
                   </div>
                 </div>
 
@@ -130,12 +130,12 @@ import { ProductCard } from '../../components/product-card/product-card';
                     rel="noopener noreferrer"
                     class="w-full py-4 px-6 bg-[#082B5C] hover:bg-[#0D4F91] text-white font-display font-black text-sm sm:text-base rounded-xl transition-all shadow-md hover:shadow-lg hover:-translate-y-0.5 cursor-pointer flex items-center justify-center gap-2"
                   >
-                    <span>COMPRAR AGORA NO KIWIFY</span>
+                    <span>COMPRAR AGORA</span>
                     <mat-icon class="!text-xl text-[#F7C51E]">flash_on</mat-icon>
                   </a>
                   <div class="text-center mt-2 flex items-center justify-center gap-1.5 text-[11px] text-slate-500">
                     <mat-icon class="!text-sm text-emerald-600">verified</mat-icon>
-                    <span>Checkout Seguro Kiwify · Pix Imediato · Cartão em até 6x</span>
+                    <span>Checkout Seguro · Pix Imediato · Cartão em até 6x</span>
                   </div>
                 </div>
 

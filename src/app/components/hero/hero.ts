@@ -80,7 +80,7 @@ import { MatIconModule } from '@angular/material/icon';
               <!-- Primary Showcase Hero Mockup -->
               <div class="relative rounded-2xl overflow-hidden shadow-2xl border border-slate-200/80 bg-white group">
                 <img
-                  src="/assets/images/mockup_combo_enem_1790993357131.jpg"
+                  src="/assets/images/combo-enem.png"
                   alt="ENEM 2026 em Mapas Mentais com 150 Mapas e Simulado de 40 Questões da Mappia"
                   referrerpolicy="no-referrer"
                   class="w-full h-auto object-cover transform group-hover:scale-[1.02] transition-transform duration-700"
