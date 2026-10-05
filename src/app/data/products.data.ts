@@ -171,7 +171,7 @@ export const PRODUCTS: Product[] = [
     reviewsCount: 940,
     isFeatured: true,
     isBestSeller: true,
-    kiwifyCheckoutUrl: 'https://pay.kiwify.com.br/mappia-biblia-mapas',
+    kiwifyCheckoutUrl: 'https://pay.kiwify.com.br/VG5saHT',
     subjects: [
       'Pentateuco e Origens Históricas',
       'Livros Históricos e Reis de Israel',
