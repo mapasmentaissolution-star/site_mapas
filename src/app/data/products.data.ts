@@ -70,6 +70,43 @@ export const CATEGORIES: CategoryInfo[] = [
 
 export const PRODUCTS: Product[] = [
   {
+    id: 'enem-5-mapas-gratuitos',
+    slug: '5-mapas-enem-gratis',
+    title: '5 MAPAS MENTAIS ENEM 2026 — BRINDE GRATUITO',
+    shortDescription: 'Amostra oficial com 5 mapas estratégicos cobrindo Matemática, Humanas, Natureza, Linguagens e Redação em PDF pronto para imprimir.',
+    fullDescription: 'Experimente a metodologia visual da Mappia sem pagar nada! Este material gratuito reúne 5 mapas mentais completos e objetivos com os temas mais recorrentes do ENEM 2026: Porcentagem no ENEM, Revolução Industrial, Ecologia no ENEM, Interpretação de Texto e Redação Nota 1000 com as 5 Competências do Inep. Arquivo em PDF de altíssima definição (300 DPI), formato A4 pronto para imprimir ou revisar direto no seu celular ou computador.',
+    price: 0,
+    originalPrice: 19.90,
+    badge: '100% GRÁTIS • BRINDE OFICIAL',
+    categories: ['enem-2026', 'mapas-mentais'],
+    image: '/assets/images/enem-brinde.png',
+    mapsCount: 5,
+    format: 'PDF Grátis',
+    pagesEstimated: 6,
+    rating: 5.0,
+    reviewsCount: 2340,
+    isFeatured: true,
+    isBestSeller: true,
+    kiwifyCheckoutUrl: FREE_ENEM_DRIVE_URL,
+    subjects: [
+      'Matemática: Porcentagem no ENEM (Fórmulas e Casos Práticos)',
+      'Ciências Humanas: Revolução Industrial (1ª e 2ª Fases)',
+      'Ciências da Natureza: Ecologia no ENEM (Cadeia e Ciclos)',
+      'Linguagens: Interpretação de Texto (Estratégias de Resolução)',
+      'Redação ENEM: Estrutura em 4 Parágrafos & 5 Competências'
+    ],
+    whatYouGet: [
+      'Arquivo PDF completo em alta resolução pronto para impressão em A4',
+      '5 Mapas Mentais ilustrados das 5 áreas do conhecimento',
+      'Esquemas mnemônicos e dicas do que mais cai na prova',
+      'Download imediato e direto pelo Google Drive, sem custo'
+    ],
+    targetAudience: [
+      'Estudantes que vão prestar o ENEM 2026 e querem conhecer os mapas da Mappia',
+      'Vestibulandos que precisam de revisões rápidas e certeiras'
+    ]
+  },
+  {
     id: 'combo-enem-supremo',
     slug: 'enem-2026-mapas-e-simulado',
     title: 'ENEM 2026: 150 MAPAS MENTAIS + SIMULADO',

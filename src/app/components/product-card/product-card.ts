@@ -43,13 +43,17 @@ import { KiwifyCheckout } from '../../services/kiwify-checkout';
           <div class="absolute top-3 left-3 z-20">
             <span
               class="inline-flex items-center gap-1 px-2.5 py-1 text-xs font-bold tracking-wide rounded-md shadow-xs"
-              [class]="product().isComingSoon
-                ? 'bg-amber-400 text-slate-950'
-                : (product().badge === 'ECONOMIZE NO COMBO' || product().badge === 'MAIS VENDIDO'
-                  ? 'bg-[#F7C51E] text-slate-900'
-                  : 'bg-[#082B5C] text-white')"
+              [class]="product().price === 0
+                ? 'bg-emerald-600 text-white font-extrabold ring-2 ring-white/60'
+                : (product().isComingSoon
+                  ? 'bg-amber-400 text-slate-950'
+                  : (product().badge === 'ECONOMIZE NO COMBO' || product().badge === 'MAIS VENDIDO'
+                    ? 'bg-[#F7C51E] text-slate-900'
+                    : 'bg-[#082B5C] text-white'))"
             >
-              @if (product().isComingSoon) {
+              @if (product().price === 0) {
+                <mat-icon class="!text-xs !w-3.5 !h-3.5 text-[#F7C51E]">redeem</mat-icon>
+              } @else if (product().isComingSoon) {
                 <mat-icon class="!text-xs !w-3.5 !h-3.5 text-slate-950">schedule</mat-icon>
               }
               <span>{{ product().badge }}</span>
@@ -102,17 +106,29 @@ import { KiwifyCheckout } from '../../services/kiwify-checkout';
         <!-- Price & Action -->
         <div class="flex items-end justify-between gap-3 pt-1">
           <div>
-            @if (product().originalPrice) {
-              <span class="block text-[11px] text-slate-400 line-through">
-                R$ {{ product().originalPrice | number:'1.2-2' }}
-              </span>
+            @if (product().price === 0) {
+              <div class="flex items-baseline gap-1.5">
+                <span class="text-xl font-black text-emerald-600 font-display tracking-tight">
+                  GRÁTIS
+                </span>
+                <span class="text-[10px] font-extrabold uppercase bg-emerald-100 text-emerald-800 px-1.5 py-0.5 rounded">
+                  100% OFF
+                </span>
+              </div>
+              <span class="block text-[10px] text-slate-400">Sem custo nenhum</span>
+            } @else {
+              @if (product().originalPrice) {
+                <span class="block text-[11px] text-slate-400 line-through">
+                  R$ {{ product().originalPrice | number:'1.2-2' }}
+                </span>
+              }
+              <div class="flex items-baseline gap-1">
+                <span class="text-xs font-semibold text-slate-700">R$</span>
+                <span class="text-xl font-extrabold text-[#082B5C] font-mono tracking-tight">
+                  {{ product().price | number:'1.2-2' }}
+                </span>
+              </div>
             }
-            <div class="flex items-baseline gap-1">
-              <span class="text-xs font-semibold text-slate-700">R$</span>
-              <span class="text-xl font-extrabold text-[#082B5C] font-mono tracking-tight">
-                {{ product().price | number:'1.2-2' }}
-              </span>
-            </div>
           </div>
 
           <div class="flex items-center gap-1.5">
@@ -123,7 +139,18 @@ import { KiwifyCheckout } from '../../services/kiwify-checkout';
               <span>Detalhes</span>
             </a>
 
-            @if (product().isComingSoon) {
+            @if (product().price === 0) {
+              <a
+                [href]="product().kiwifyCheckoutUrl"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center gap-1.5 px-3.5 py-2 text-xs font-black text-slate-950 bg-[#F7C51E] hover:bg-amber-400 rounded-xl transition-all shadow-md hover:shadow-lg hover:-translate-y-0.5 cursor-pointer whitespace-nowrap animate-pulse"
+                title="Baixar 5 Mapas ENEM Grátis no Google Drive"
+              >
+                <mat-icon class="!text-sm text-[#082B5C] !w-3.5 !h-3.5">download</mat-icon>
+                <span>BAIXAR GRÁTIS</span>
+              </a>
+            } @else if (product().isComingSoon) {
               <span
                 class="inline-flex items-center gap-1 px-3 py-2 text-xs font-bold text-slate-500 bg-slate-100 rounded-xl cursor-not-allowed whitespace-nowrap border border-slate-200"
                 title="Ainda não temos mapas mentais nessa área. Em breve!"

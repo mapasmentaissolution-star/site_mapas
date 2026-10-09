@@ -15,11 +15,17 @@ import { WHATSAPP_URL, WHATSAPP_PHONE_FORMATTED } from '../../data/products.data
     <div class="bg-[#082B5C] text-white text-xs py-2 px-4 border-b border-white/10">
       <div class="max-w-7xl mx-auto flex items-center justify-between">
         <div class="flex items-center gap-2">
-          <span class="inline-flex items-center justify-center w-5 h-5 rounded-full bg-[#F7C51E] text-[#082B5C] font-bold text-[10px]">
-            ⚡
-          </span>
-          <span class="font-medium tracking-wide">
-            Acesso Imediato em PDF pós-compra via Kiwify · 100% Digital e Pronto para Imprimir
+          <a
+            routerLink="/"
+            fragment="enem-brinde-gratis"
+            class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-[#F7C51E] hover:bg-amber-400 text-slate-950 font-black text-[11px] transition-all shadow-xs"
+          >
+            <span>🎁 PDF GRÁTIS:</span>
+            <span class="underline">BAIXAR 5 MAPAS ENEM 2026</span>
+            <span class="text-xs">→</span>
+          </a>
+          <span class="hidden xl:inline text-slate-300 text-xs">
+            · Amostra oficial em alta definição pronta para imprimir
           </span>
         </div>
         <div class="hidden md:flex items-center gap-4 text-[11px] text-slate-300">
@@ -190,6 +196,21 @@ import { WHATSAPP_URL, WHATSAPP_PHONE_FORMATTED } from '../../data/products.data
             <span class="tracking-wide">ENEM 2026</span>
             <span class="text-[9px] bg-[#F7C51E] text-slate-900 group-hover/enem:bg-white group-hover/enem:text-[#082B5C] px-1.5 py-0.2 rounded font-extrabold uppercase">
               Destaque
+            </span>
+          </a>
+
+          <!-- BRINDE GRÁTIS ENEM - EM SUPER DESTAQUE -->
+          <a
+            routerLink="/"
+            fragment="enem-brinde-gratis"
+            class="relative inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-black text-xs shadow-md transition-all hover:scale-105 ring-2 ring-emerald-300/60"
+            title="Baixar 5 Mapas Mentais do ENEM 2026 Gratuitamente em PDF"
+          >
+            <span class="w-2 h-2 rounded-full bg-[#F7C51E] animate-ping"></span>
+            <mat-icon class="!text-sm !w-4 !h-4 text-[#F7C51E]">card_giftcard</mat-icon>
+            <span class="tracking-wide">PDF ENEM GRÁTIS</span>
+            <span class="text-[9px] bg-[#F7C51E] text-slate-950 px-1.5 py-0.2 rounded font-black uppercase">
+              5 Mapas
             </span>
           </a>
 

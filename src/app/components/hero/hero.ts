@@ -39,22 +39,31 @@ import { MatIconModule } from '@angular/material/icon';
             </p>
 
             <!-- Action CTAs -->
-            <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 w-full sm:w-auto mb-10">
+            <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 w-full sm:w-auto mb-4">
+              <!-- SUPER DESTAQUE: BAIXAR PDF ENEM GRÁTIS -->
               <a
-                routerLink="/mapas-mentais"
-                class="inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-[#082B5C] hover:bg-[#0D4F91] text-white font-display font-bold text-sm rounded-xl transition-all shadow-md hover:shadow-lg hover:-translate-y-0.5 cursor-pointer whitespace-nowrap"
+                routerLink="/"
+                fragment="enem-brinde-gratis"
+                class="inline-flex items-center justify-center gap-2.5 px-6 py-4 bg-gradient-to-r from-[#F7C51E] via-amber-400 to-[#F7C51E] hover:from-amber-400 hover:to-amber-500 text-slate-950 font-display font-black text-sm rounded-xl transition-all shadow-xl hover:shadow-2xl hover:-translate-y-0.5 cursor-pointer whitespace-nowrap ring-4 ring-amber-400/25 group"
               >
-                <span>VER MAPAS MENTAIS</span>
-                <mat-icon class="!text-lg">arrow_forward</mat-icon>
+                <mat-icon class="!text-xl text-[#082B5C] group-hover:rotate-12 transition-transform">card_giftcard</mat-icon>
+                <span>BAIXAR 5 MAPAS ENEM GRÁTIS</span>
+                <span class="text-[10px] bg-[#082B5C] text-[#F7C51E] px-2 py-0.5 rounded-md font-extrabold uppercase">PDF</span>
               </a>
 
               <a
                 routerLink="/enem-2026"
-                class="inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-white hover:bg-slate-50 text-[#082B5C] border border-slate-300 font-display font-bold text-sm rounded-xl transition-all shadow-xs hover:shadow-sm cursor-pointer whitespace-nowrap"
+                class="inline-flex items-center justify-center gap-2 px-6 py-4 bg-[#082B5C] hover:bg-[#0D4F91] text-white font-display font-bold text-sm rounded-xl transition-all shadow-md hover:shadow-lg hover:-translate-y-0.5 cursor-pointer whitespace-nowrap"
               >
-                <span>CONHECER ENEM 2026</span>
-                <mat-icon class="!text-lg text-[#F7C51E]">stars</mat-icon>
+                <span>COMBO 150 MAPAS ENEM</span>
+                <mat-icon class="!text-lg text-[#F7C51E]">bolt</mat-icon>
               </a>
+            </div>
+
+            <!-- Free Gift Highlight Note -->
+            <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-900 text-xs font-semibold mb-8">
+              <span class="w-2 h-2 rounded-full bg-emerald-500 animate-ping"></span>
+              <span>🎁 Amostra 100% gratuita das 5 áreas disponível para download imediato em PDF!</span>
             </div>
 
             <!-- Value Perks / Trust Checklist -->

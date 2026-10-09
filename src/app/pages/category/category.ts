@@ -51,6 +51,37 @@ import { EnemFreeGift } from '../../components/enem-free-gift/enem-free-gift';
           </div>
         }
 
+        <!-- Destaque Especial: Brinde Gratuito 5 Mapas ENEM 2026 -->
+        @if (currentSlug() === 'enem-2026') {
+          <div class="mb-8 p-6 rounded-3xl bg-gradient-to-r from-[#082B5C] via-[#0D4F91] to-[#082B5C] text-white border-2 border-[#F7C51E] shadow-xl flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="flex items-center gap-4">
+              <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-[#F7C51E] text-slate-950 flex items-center justify-center shrink-0 shadow-md">
+                <mat-icon class="!text-3xl text-[#082B5C]">card_giftcard</mat-icon>
+              </div>
+              <div>
+                <span class="inline-block px-2.5 py-0.5 rounded-full bg-[#F7C51E] text-slate-950 text-[10px] font-black uppercase tracking-wider mb-1">
+                  100% GRATUITO • DOWNLOAD LIBERADO
+                </span>
+                <h3 class="font-display font-black text-lg sm:text-xl text-white">
+                  5 Mapas Mentais do ENEM 2026 em PDF
+                </h3>
+                <p class="text-xs text-slate-200 mt-0.5 max-w-xl">
+                  Amostra oficial com 1 mapa de cada uma das 5 áreas para você testar nossa metodologia visual sem custo nenhum.
+                </p>
+              </div>
+            </div>
+
+            <a
+              routerLink="/"
+              fragment="enem-brinde-gratis"
+              class="w-full md:w-auto px-6 py-3.5 bg-[#F7C51E] hover:bg-amber-400 text-slate-950 font-display font-black text-xs sm:text-sm rounded-xl transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5 shrink-0 flex items-center justify-center gap-2 uppercase tracking-wider cursor-pointer"
+            >
+              <mat-icon class="!text-lg text-[#082B5C]">download</mat-icon>
+              <span>BAIXAR PDF GRÁTIS</span>
+            </a>
+          </div>
+        }
+
         <!-- Controls Bar: Filter & Sort -->
         <div class="bg-white p-4 rounded-2xl border border-slate-200/80 shadow-xs mb-8 flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-4">
           <div class="text-xs text-slate-600 font-medium">
