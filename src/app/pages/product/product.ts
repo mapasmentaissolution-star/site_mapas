@@ -5,6 +5,7 @@ import { DecimalPipe } from '@angular/common';
 import { MatIconModule } from '@angular/material/icon';
 import { CatalogData } from '../../services/catalog-data';
 import { ProductCard } from '../../components/product-card/product-card';
+import { WHATSAPP_URL, WHATSAPP_PHONE_FORMATTED } from '../../data/products.data';
 
 @Component({
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -37,20 +38,39 @@ import { ProductCard } from '../../components/product-card/product-card';
                   class="w-full h-full object-cover object-center"
                 />
 
+                <!-- Watermark Marca D'água "EM BREVE" -->
+                @if (prod.isComingSoon) {
+                  <div class="absolute inset-0 bg-slate-900/40 backdrop-blur-[1px] flex flex-col items-center justify-center p-4 z-10 pointer-events-none select-none">
+                    <div class="border-2 border-dashed border-amber-300/90 bg-slate-950/80 px-6 py-3 rounded-2xl text-center transform -rotate-6 shadow-2xl backdrop-blur-xs">
+                      <span class="block font-display font-black text-amber-300 text-lg sm:text-xl tracking-widest uppercase">
+                        EM BREVE
+                      </span>
+                      <span class="block text-xs text-slate-200 font-medium tracking-wide">
+                        Material em desenvolvimento
+                      </span>
+                    </div>
+                  </div>
+                }
+
                 @if (prod.badge) {
-                  <div class="absolute top-4 left-4">
+                  <div class="absolute top-4 left-4 z-20">
                     <span
-                      class="px-3 py-1 rounded-md text-xs font-bold tracking-wide uppercase shadow-xs"
-                      [class]="prod.badge === 'ECONOMIZE NO COMBO' || prod.badge === 'MAIS VENDIDO'
-                        ? 'bg-[#F7C51E] text-slate-900'
-                        : 'bg-[#082B5C] text-white'"
+                      class="px-3 py-1 rounded-md text-xs font-bold tracking-wide uppercase shadow-xs flex items-center gap-1"
+                      [class]="prod.isComingSoon
+                        ? 'bg-amber-400 text-slate-950'
+                        : (prod.badge === 'ECONOMIZE NO COMBO' || prod.badge === 'MAIS VENDIDO'
+                          ? 'bg-[#F7C51E] text-slate-900'
+                          : 'bg-[#082B5C] text-white')"
                     >
-                      {{ prod.badge }}
+                      @if (prod.isComingSoon) {
+                        <mat-icon class="!text-xs !w-3.5 !h-3.5 text-slate-950">schedule</mat-icon>
+                      }
+                      <span>{{ prod.badge }}</span>
                     </span>
                   </div>
                 }
 
-                <div class="absolute bottom-4 right-4 bg-white/95 backdrop-blur-xs text-slate-700 text-xs font-semibold px-2.5 py-1 rounded-lg border border-slate-200 shadow-xs flex items-center gap-1.5">
+                <div class="absolute bottom-4 right-4 z-20 bg-white/95 backdrop-blur-xs text-slate-700 text-xs font-semibold px-2.5 py-1 rounded-lg border border-slate-200 shadow-xs flex items-center gap-1.5">
                   <mat-icon class="!text-sm !w-4 !h-4 text-[#0D4F91]">picture_as_pdf</mat-icon>
                   <span>{{ prod.format }}</span>
                 </div>
@@ -122,21 +142,32 @@ import { ProductCard } from '../../components/product-card/product-card';
                   </div>
                 </div>
 
-                <!-- Button: Direct Kiwify Buy Now -->
+                <!-- Button: Direct Kiwify Buy Now or EM BREVE -->
                 <div class="mb-6">
-                  <a
-                    [href]="prod.kiwifyCheckoutUrl"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="w-full py-4 px-6 bg-[#082B5C] hover:bg-[#0D4F91] text-white font-display font-black text-sm sm:text-base rounded-xl transition-all shadow-md hover:shadow-lg hover:-translate-y-0.5 cursor-pointer flex items-center justify-center gap-2"
-                  >
-                    <span>COMPRAR AGORA</span>
-                    <mat-icon class="!text-xl text-[#F7C51E]">flash_on</mat-icon>
-                  </a>
-                  <div class="text-center mt-2 flex items-center justify-center gap-1.5 text-[11px] text-slate-500">
-                    <mat-icon class="!text-sm text-emerald-600">verified</mat-icon>
-                    <span>Checkout Seguro · Pix Imediato · Cartão em até 6x</span>
-                  </div>
+                  @if (prod.isComingSoon) {
+                    <div class="w-full py-4 px-6 bg-slate-100 border border-slate-300 text-slate-700 font-display font-bold text-sm sm:text-base rounded-xl flex items-center justify-center gap-2 text-center shadow-xs">
+                      <mat-icon class="!text-xl text-amber-600">hourglass_top</mat-icon>
+                      <span class="uppercase tracking-wider font-extrabold text-[#082B5C]">PRODUTO EM PRODUÇÃO • EM BREVE</span>
+                    </div>
+                    <div class="text-center mt-3 text-xs text-amber-900 bg-amber-50 border border-amber-200/80 rounded-xl p-3 flex items-center justify-center gap-2">
+                      <mat-icon class="!text-sm text-amber-600">info</mat-icon>
+                      <span>Ainda não temos mapas mentais nessa área. Estamos finalizando este material para lançamento em breve!</span>
+                    </div>
+                  } @else {
+                    <a
+                      [href]="prod.kiwifyCheckoutUrl"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="w-full py-4 px-6 bg-[#082B5C] hover:bg-[#0D4F91] text-white font-display font-black text-sm sm:text-base rounded-xl transition-all shadow-md hover:shadow-lg hover:-translate-y-0.5 cursor-pointer flex items-center justify-center gap-2"
+                    >
+                      <span>COMPRAR AGORA</span>
+                      <mat-icon class="!text-xl text-[#F7C51E]">flash_on</mat-icon>
+                    </a>
+                    <div class="text-center mt-2 flex items-center justify-center gap-1.5 text-[11px] text-slate-500">
+                      <mat-icon class="!text-sm text-emerald-600">verified</mat-icon>
+                      <span>Checkout Seguro · Pix Imediato · Cartão em até 6x</span>
+                    </div>
+                  }
                 </div>
 
                 <!-- Guarantee & Safety ticks -->
@@ -157,6 +188,20 @@ import { ProductCard } from '../../components/product-card/product-card';
                     <mat-icon class="!text-base !w-4 !h-4 text-emerald-600">check_circle</mat-icon>
                     <span>Compra 100% segura</span>
                   </div>
+                </div>
+
+                <!-- WhatsApp Support Callout Button -->
+                <div class="mt-5 pt-4 border-t border-slate-100">
+                  <a
+                    [href]="whatsappUrl"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="w-full py-3 px-4 bg-emerald-50 hover:bg-emerald-100/80 border border-emerald-300 text-emerald-950 font-bold text-xs rounded-xl transition-all flex items-center justify-center gap-2 cursor-pointer shadow-xs"
+                    [title]="'Fale conosco no WhatsApp ' + whatsappPhone"
+                  >
+                    <mat-icon class="!text-lg text-emerald-600">chat</mat-icon>
+                    <span>Dúvidas sobre o material? Fale no WhatsApp ({{ whatsappPhone }})</span>
+                  </a>
                 </div>
               </div>
             </div>
@@ -341,4 +386,7 @@ export class ProductPage {
     if (!prod) return [];
     return this.catalogData.getRelatedProducts(prod.id, 4);
   });
+
+  readonly whatsappUrl = WHATSAPP_URL;
+  readonly whatsappPhone = WHATSAPP_PHONE_FORMATTED;
 }

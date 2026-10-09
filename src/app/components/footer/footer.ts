@@ -1,6 +1,7 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { MatIconModule } from '@angular/material/icon';
+import { WHATSAPP_URL, WHATSAPP_PHONE_FORMATTED } from '../../data/products.data';
 
 @Component({
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -67,6 +68,12 @@ import { MatIconModule } from '@angular/material/icon';
                 </a>
               </li>
               <li>
+                <a routerLink="/" fragment="enem-brinde-gratis" class="hover:text-white transition-colors flex items-center gap-1 text-emerald-300 font-semibold">
+                  <span>5 Mapas ENEM (Brinde Grátis)</span>
+                  <span class="text-[9px] bg-emerald-500 text-slate-950 px-1 py-0.2 rounded font-extrabold">PDF</span>
+                </a>
+              </li>
+              <li>
                 <a routerLink="/biblicos" class="hover:text-white transition-colors">
                   Bíblia em Mapas Mentais
                 </a>
@@ -100,6 +107,17 @@ import { MatIconModule } from '@angular/material/icon';
               Atendimento & Suporte
             </h4>
             <ul class="space-y-2.5 text-xs text-slate-300">
+              <li>
+                <a
+                  [href]="whatsappUrl"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-flex items-center gap-2 px-3 py-2 bg-[#25D366] hover:bg-[#1EBE5D] text-slate-950 rounded-xl font-extrabold text-xs transition-all shadow-sm my-1"
+                >
+                  <mat-icon class="!text-base !w-4 !h-4">chat</mat-icon>
+                  <span>WhatsApp: {{ whatsappPhone }}</span>
+                </a>
+              </li>
               <li>
                 <a routerLink="/" fragment="faq" class="hover:text-white transition-colors">Dúvidas frequentes</a>
               </li>
@@ -166,4 +184,7 @@ import { MatIconModule } from '@angular/material/icon';
     </footer>
   `
 })
-export class Footer {}
+export class Footer {
+  readonly whatsappUrl = WHATSAPP_URL;
+  readonly whatsappPhone = WHATSAPP_PHONE_FORMATTED;
+}

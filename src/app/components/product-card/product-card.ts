@@ -24,22 +24,41 @@ import { KiwifyCheckout } from '../../services/kiwify-checkout';
         <!-- Subtle Gradient Overlay -->
         <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 
+        <!-- Watermark Marca D'água "EM BREVE" -->
+        @if (product().isComingSoon) {
+          <div class="absolute inset-0 bg-slate-900/40 backdrop-blur-[1px] flex flex-col items-center justify-center p-3 z-10 pointer-events-none select-none">
+            <div class="border-2 border-dashed border-amber-300/90 bg-slate-950/80 px-4 py-2 rounded-xl text-center transform -rotate-6 shadow-2xl backdrop-blur-xs">
+              <span class="block font-display font-black text-amber-300 text-sm sm:text-base tracking-widest uppercase">
+                EM BREVE
+              </span>
+              <span class="block text-[10px] text-slate-200 font-medium tracking-wide">
+                Em desenvolvimento
+              </span>
+            </div>
+          </div>
+        }
+
         <!-- Top Badge -->
         @if (product().badge) {
-          <div class="absolute top-3 left-3">
+          <div class="absolute top-3 left-3 z-20">
             <span
-              class="inline-flex items-center px-2.5 py-1 text-xs font-bold tracking-wide rounded-md shadow-xs"
-              [class]="product().badge === 'ECONOMIZE NO COMBO' || product().badge === 'MAIS VENDIDO'
-                ? 'bg-[#F7C51E] text-slate-900'
-                : 'bg-[#082B5C] text-white'"
+              class="inline-flex items-center gap-1 px-2.5 py-1 text-xs font-bold tracking-wide rounded-md shadow-xs"
+              [class]="product().isComingSoon
+                ? 'bg-amber-400 text-slate-950'
+                : (product().badge === 'ECONOMIZE NO COMBO' || product().badge === 'MAIS VENDIDO'
+                  ? 'bg-[#F7C51E] text-slate-900'
+                  : 'bg-[#082B5C] text-white')"
             >
-              {{ product().badge }}
+              @if (product().isComingSoon) {
+                <mat-icon class="!text-xs !w-3.5 !h-3.5 text-slate-950">schedule</mat-icon>
+              }
+              <span>{{ product().badge }}</span>
             </span>
           </div>
         }
 
         <!-- Format indicator -->
-        <div class="absolute top-3 right-3 bg-white/90 backdrop-blur-xs text-slate-700 text-[11px] font-medium px-2 py-0.5 rounded-md border border-slate-200/60 shadow-xs">
+        <div class="absolute top-3 right-3 z-20 bg-white/90 backdrop-blur-xs text-slate-700 text-[11px] font-medium px-2 py-0.5 rounded-md border border-slate-200/60 shadow-xs">
           {{ product().format }}
         </div>
       </a>
@@ -66,9 +85,16 @@ import { KiwifyCheckout } from '../../services/kiwify-checkout';
         </h3>
 
         <!-- Short Description -->
-        <p class="text-xs text-slate-600 line-clamp-2 mb-4 leading-relaxed flex-1">
+        <p class="text-xs text-slate-600 line-clamp-2 mb-3 leading-relaxed flex-1">
           {{ product().shortDescription }}
         </p>
+
+        @if (product().isComingSoon) {
+          <div class="mb-3 text-[10px] text-amber-800 bg-amber-50 border border-amber-200 rounded-md px-2.5 py-1 font-medium flex items-center gap-1">
+            <mat-icon class="!text-xs !w-3.5 !h-3.5 text-amber-600">info</mat-icon>
+            <span>Ainda não disponível · Lançamento em breve</span>
+          </div>
+        }
 
         <!-- Divider -->
         <div class="h-px bg-slate-100 w-full mb-3"></div>
@@ -97,15 +123,25 @@ import { KiwifyCheckout } from '../../services/kiwify-checkout';
               <span>Detalhes</span>
             </a>
 
-            <a
-              [href]="product().kiwifyCheckoutUrl"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="inline-flex items-center gap-1 px-3 py-2 text-xs font-bold text-white bg-[#082B5C] hover:bg-[#0D4F91] rounded-xl transition-all shadow-xs hover:shadow-md cursor-pointer whitespace-nowrap"
-            >
-              <span>COMPRAR</span>
-              <mat-icon class="!text-sm text-[#F7C51E] !w-3.5 !h-3.5">bolt</mat-icon>
-            </a>
+            @if (product().isComingSoon) {
+              <span
+                class="inline-flex items-center gap-1 px-3 py-2 text-xs font-bold text-slate-500 bg-slate-100 rounded-xl cursor-not-allowed whitespace-nowrap border border-slate-200"
+                title="Ainda não temos mapas mentais nessa área. Em breve!"
+              >
+                <mat-icon class="!text-sm text-amber-500 !w-3.5 !h-3.5">hourglass_top</mat-icon>
+                <span>EM BREVE</span>
+              </span>
+            } @else {
+              <a
+                [href]="product().kiwifyCheckoutUrl"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center gap-1 px-3 py-2 text-xs font-bold text-white bg-[#082B5C] hover:bg-[#0D4F91] rounded-xl transition-all shadow-xs hover:shadow-md cursor-pointer whitespace-nowrap"
+              >
+                <span>COMPRAR</span>
+                <mat-icon class="!text-sm text-[#F7C51E] !w-3.5 !h-3.5">bolt</mat-icon>
+              </a>
+            }
           </div>
         </div>
       </div>

@@ -132,14 +132,22 @@ import { MatIconModule } from '@angular/material/icon';
           </div>
 
           <!-- Inglês -->
-          <div class="group relative flex flex-col justify-between p-6 rounded-3xl border border-slate-200/80 bg-[#F6F8FA] hover:bg-white hover:border-[#0D4F91]/40 hover:shadow-lg transition-all duration-300">
+          <div class="group relative flex flex-col justify-between p-6 rounded-3xl border border-slate-200/80 bg-[#F6F8FA] hover:bg-white hover:border-amber-400/40 hover:shadow-lg transition-all duration-300 overflow-hidden">
+            <!-- Subtle diagonal watermark in background -->
+            <div class="absolute -right-6 top-8 transform rotate-12 pointer-events-none select-none opacity-15">
+              <span class="font-display font-black text-3xl text-amber-700 uppercase tracking-widest">
+                EM BREVE
+              </span>
+            </div>
+
             <div>
               <div class="flex items-center justify-between mb-4">
                 <div class="w-12 h-12 rounded-2xl bg-white border border-slate-200/60 shadow-xs flex items-center justify-center text-[#082B5C] group-hover:bg-[#082B5C] group-hover:text-[#F7C51E] transition-colors">
                   <mat-icon class="!text-2xl">language</mat-icon>
                 </div>
-                <span class="text-[11px] font-bold tracking-wider uppercase text-purple-700 bg-purple-50 px-2.5 py-1 rounded-md border border-purple-200">
-                  Idiomas
+                <span class="text-[11px] font-bold tracking-wider uppercase text-amber-900 bg-amber-100 px-2.5 py-1 rounded-md border border-amber-300 flex items-center gap-1">
+                  <mat-icon class="!text-xs !w-3.5 !h-3.5 text-amber-700">schedule</mat-icon>
+                  <span>Em Breve</span>
                 </span>
               </div>
 
@@ -150,10 +158,14 @@ import { MatIconModule } from '@angular/material/icon';
               <p class="text-xs text-slate-600 line-clamp-3 leading-relaxed mb-4">
                 Mapas mentais para aprender inglês com mais facilidade: tempos verbais, vocabulário e expressões práticas.
               </p>
+
+              <div class="text-[11px] text-amber-800 bg-amber-50/80 border border-amber-200/60 rounded-lg px-2.5 py-1 mb-2 font-medium">
+                ⏳ Em produção · Disponível em breve
+              </div>
             </div>
 
             <div class="pt-4 border-t border-slate-200/60 flex items-center justify-between">
-              <span class="text-xs font-bold text-slate-700 font-mono">A partir de R$ 27,90</span>
+              <span class="text-xs font-bold text-amber-700 font-mono">Lançamento em breve</span>
               <a
                 routerLink="/ingles"
                 class="inline-flex items-center gap-1 text-xs font-bold text-[#0D4F91] hover:text-[#082B5C]"
@@ -165,14 +177,22 @@ import { MatIconModule } from '@angular/material/icon';
           </div>
 
           <!-- Programação -->
-          <div class="group relative flex flex-col justify-between p-6 rounded-3xl border border-slate-200/80 bg-[#F6F8FA] hover:bg-white hover:border-[#0D4F91]/40 hover:shadow-lg transition-all duration-300">
+          <div class="group relative flex flex-col justify-between p-6 rounded-3xl border border-slate-200/80 bg-[#F6F8FA] hover:bg-white hover:border-amber-400/40 hover:shadow-lg transition-all duration-300 overflow-hidden">
+            <!-- Subtle diagonal watermark in background -->
+            <div class="absolute -right-6 top-8 transform rotate-12 pointer-events-none select-none opacity-15">
+              <span class="font-display font-black text-3xl text-amber-700 uppercase tracking-widest">
+                EM BREVE
+              </span>
+            </div>
+
             <div>
               <div class="flex items-center justify-between mb-4">
                 <div class="w-12 h-12 rounded-2xl bg-white border border-slate-200/60 shadow-xs flex items-center justify-center text-[#082B5C] group-hover:bg-[#082B5C] group-hover:text-[#F7C51E] transition-colors">
                   <mat-icon class="!text-2xl">terminal</mat-icon>
                 </div>
-                <span class="text-[11px] font-bold tracking-wider uppercase text-amber-700 bg-amber-50 px-2.5 py-1 rounded-md border border-amber-200">
-                  Tecnologia
+                <span class="text-[11px] font-bold tracking-wider uppercase text-amber-900 bg-amber-100 px-2.5 py-1 rounded-md border border-amber-300 flex items-center gap-1">
+                  <mat-icon class="!text-xs !w-3.5 !h-3.5 text-amber-700">schedule</mat-icon>
+                  <span>Em Breve</span>
                 </span>
               </div>
 
@@ -183,10 +203,14 @@ import { MatIconModule } from '@angular/material/icon';
               <p class="text-xs text-slate-600 line-clamp-3 leading-relaxed mb-4">
                 Conceitos de programação de forma visual e simplificada: lógica, algoritmos, estruturas de dados e Python.
               </p>
+
+              <div class="text-[11px] text-amber-800 bg-amber-50/80 border border-amber-200/60 rounded-lg px-2.5 py-1 mb-2 font-medium">
+                ⏳ Em produção · Disponível em breve
+              </div>
             </div>
 
             <div class="pt-4 border-t border-slate-200/60 flex items-center justify-between">
-              <span class="text-xs font-bold text-slate-700 font-mono">A partir de R$ 34,90</span>
+              <span class="text-xs font-bold text-amber-700 font-mono">Lançamento em breve</span>
               <a
                 routerLink="/programacao"
                 class="inline-flex items-center gap-1 text-xs font-bold text-[#0D4F91] hover:text-[#082B5C]"

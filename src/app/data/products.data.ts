@@ -1,5 +1,10 @@
 import { Product, CategoryInfo, Testimonial, FaqItem } from '../models/product.model';
 
+export const FREE_ENEM_DRIVE_URL = 'https://drive.google.com/drive/folders/1mappia-enem-5-mapas-gratuitos?usp=sharing';
+export const WHATSAPP_PHONE = '11987973086';
+export const WHATSAPP_PHONE_FORMATTED = '(11) 98797-3086';
+export const WHATSAPP_URL = 'https://wa.me/5511987973086?text=Ol%C3%A1%2C%20gostaria%20de%20tirar%20d%C3%BAvidas%20sobre%20os%20mapas%20mentais%20da%20Mappia!';
+
 export const CATEGORIES: CategoryInfo[] = [
   {
     id: 'enem-2026',
@@ -49,7 +54,7 @@ export const CATEGORIES: CategoryInfo[] = [
     description: 'Mapas mentais para aprender inglês com mais facilidade: tempos verbais, vocabulário e expressões.',
     icon: 'language',
     color: '#082B5C',
-    badgeText: 'Idiomas'
+    badgeText: 'Em Breve'
   },
   {
     id: 'programacao',
@@ -59,7 +64,7 @@ export const CATEGORIES: CategoryInfo[] = [
     description: 'Conceitos de programação, algoritmos, lógica, Python e estruturas de dados de forma visual.',
     icon: 'terminal',
     color: '#0D4F91',
-    badgeText: 'Tecnologia'
+    badgeText: 'Em Breve'
   }
 ];
 
@@ -201,7 +206,7 @@ export const PRODUCTS: Product[] = [
     fullDescription: 'O método visual para finalmente dominar a gramática e destravar a conversação em inglês. Com esquemas mnemônicos, mapas de tempos verbais (Past, Present, Future, Perfect Tenses), conectivos, preposições (In, On, At) e os 100 Phrasal Verbs mais usados. Esqueça regras confusas e decorebas maçantes.',
     price: 27.90,
     originalPrice: 54.90,
-    badge: 'DESTRAVE O IDIOMA',
+    badge: 'EM BREVE',
     categories: ['ingles', 'mapas-mentais'],
     image: '/assets/images/product_ingles_mockup_1790962982763.jpg',
     mapsCount: 65,
@@ -211,6 +216,7 @@ export const PRODUCTS: Product[] = [
     reviewsCount: 680,
     isFeatured: true,
     isBestSeller: false,
+    isComingSoon: true,
     kiwifyCheckoutUrl: 'https://pay.kiwify.com.br/mappia-ingles-mapas',
     subjects: [
       'Todos os Tempos Verbais (Simple, Continuous, Perfect)',
@@ -272,7 +278,7 @@ export const PRODUCTS: Product[] = [
     fullDescription: 'Aprender a programar pode ser muito mais visual e intuitivo. Este guia reúne mapas mentais que explicam com clareza desde lógica de programação, variáveis, loops e condicionais, até estruturas de dados (pilhas, filas, árvores, grafos), orientação a objetos, arquitetura de software e as linguagens Python e JavaScript.',
     price: 34.90,
     originalPrice: 69.90,
-    badge: 'TECNOLOGIA',
+    badge: 'EM BREVE',
     categories: ['programacao', 'mapas-mentais'],
     image: '/assets/images/product_dev_mockup_1790963003528.jpg',
     mapsCount: 70,
@@ -282,6 +288,7 @@ export const PRODUCTS: Product[] = [
     reviewsCount: 520,
     isFeatured: true,
     isBestSeller: false,
+    isComingSoon: true,
     kiwifyCheckoutUrl: 'https://pay.kiwify.com.br/mappia-programacao-mapas',
     subjects: [
       'Lógica de Programação e Fluxogramas Visuais',

@@ -20,6 +20,7 @@ export interface Product {
   subjects?: string[];
   isFeatured?: boolean;
   isBestSeller?: boolean;
+  isComingSoon?: boolean;
   kiwifyCheckoutUrl: string;
   samplePreview?: {
     title: string;

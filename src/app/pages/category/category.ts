@@ -4,11 +4,12 @@ import { toSignal } from '@angular/core/rxjs-interop';
 import { MatIconModule } from '@angular/material/icon';
 import { CatalogData } from '../../services/catalog-data';
 import { ProductCard } from '../../components/product-card/product-card';
+import { EnemFreeGift } from '../../components/enem-free-gift/enem-free-gift';
 
 @Component({
   changeDetection: ChangeDetectionStrategy.OnPush,
   selector: 'app-category',
-  imports: [RouterLink, MatIconModule, ProductCard],
+  imports: [RouterLink, MatIconModule, ProductCard, EnemFreeGift],
   template: `
     <main class="py-10 bg-[#F6F8FA] min-h-[70vh]">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -36,6 +37,19 @@ import { ProductCard } from '../../components/product-card/product-card';
             </p>
           </div>
         </div>
+
+        <!-- Aviso de "Em Breve" para Inglês e Programação -->
+        @if (currentSlug() === 'ingles' || currentSlug() === 'programacao') {
+          <div class="mb-8 p-5 rounded-2xl bg-amber-50 border border-amber-200/90 text-amber-950 flex items-start sm:items-center gap-3.5 shadow-xs">
+            <div class="w-10 h-10 rounded-xl bg-amber-200/80 text-amber-900 flex items-center justify-center shrink-0 font-bold">
+              <mat-icon class="!text-xl">hourglass_top</mat-icon>
+            </div>
+            <div class="flex-1 text-xs sm:text-sm leading-relaxed">
+              <strong class="font-bold block text-amber-900 mb-0.5">Área em desenvolvimento • Lançamento em breve</strong>
+              <span>Ainda não temos mapas mentais disponíveis nesta área. Nossa equipe está preparando esquemas visuais completos com lançamento previsto em breve!</span>
+            </div>
+          </div>
+        }
 
         <!-- Controls Bar: Filter & Sort -->
         <div class="bg-white p-4 rounded-2xl border border-slate-200/80 shadow-xs mb-8 flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-4">
@@ -79,6 +93,13 @@ import { ProductCard } from '../../components/product-card/product-card';
             >
               Ver Outros Mapas Mentais
             </a>
+          </div>
+        }
+
+        <!-- Brinde Gratuito na página do ENEM 2026 -->
+        @if (currentSlug() === 'enem-2026') {
+          <div class="mt-14 -mx-4 sm:-mx-6 lg:-mx-8">
+            <app-enem-free-gift />
           </div>
         }
       </div>

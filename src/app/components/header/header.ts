@@ -4,6 +4,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { CatalogData } from '../../services/catalog-data';
 import { KiwifyCheckout } from '../../services/kiwify-checkout';
 import { Product } from '../../models/product.model';
+import { WHATSAPP_URL, WHATSAPP_PHONE_FORMATTED } from '../../data/products.data';
 
 @Component({
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -22,14 +23,24 @@ import { Product } from '../../models/product.model';
           </span>
         </div>
         <div class="hidden md:flex items-center gap-4 text-[11px] text-slate-300">
+          <a
+            [href]="whatsappUrl"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="flex items-center gap-1 text-[#25D366] hover:text-emerald-300 font-bold transition-colors"
+          >
+            <mat-icon class="!text-sm !w-4 !h-4">chat</mat-icon>
+            <span>WhatsApp: {{ whatsappPhone }}</span>
+          </a>
+          <span>·</span>
           <span class="flex items-center gap-1">
             <mat-icon class="!text-sm !w-4 !h-4 text-[#F7C51E]">verified</mat-icon>
-            Garantia Incondicional de 7 dias
+            Garantia de 7 dias
           </span>
           <span>·</span>
           <span class="flex items-center gap-1">
             <mat-icon class="!text-sm !w-4 !h-4 text-emerald-400">lock</mat-icon>
-            Checkout Seguro Kiwify
+            Checkout Seguro
           </span>
         </div>
       </div>
@@ -112,6 +123,21 @@ import { Product } from '../../models/product.model';
               <span class="hidden md:inline">Já Sou Aluno</span>
             </button>
 
+            <!-- WhatsApp Direct Contact Button -->
+            <a
+              [href]="whatsappUrl"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="hidden sm:inline-flex items-center gap-1.5 px-3 py-2 bg-[#25D366] hover:bg-[#1EBE5D] text-slate-950 font-display font-black text-xs rounded-xl shadow-xs transition-all hover:scale-102 cursor-pointer whitespace-nowrap"
+              [title]="'Fale conosco no WhatsApp: ' + whatsappPhone"
+            >
+              <svg class="w-4 h-4 fill-current shrink-0" viewBox="0 0 24 24">
+                <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.698.077-2.022-.472-1.688-.7-2.775-2.42-2.859-2.533-.084-.113-.683-.907-.683-1.731 0-.824.432-1.229.586-1.398.154-.17.336-.212.449-.212.112 0 .225.001.323.006.103.005.241-.039.377.29.144.35.488 1.19.531 1.277.043.088.072.19.014.305-.058.115-.088.187-.174.288-.087.101-.183.226-.261.304-.087.087-.178.182-.077.355.101.174.45 1.741 1.543 2.128.324.115.597.184.802.249.325.103.621.089.855.054.261-.039.805-.329.919-.646.114-.317.114-.588.08-.646-.034-.058-.124-.093-.268-.164z"/>
+                <path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2.05 22l4.982-1.307A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.167c-1.614 0-3.12-.442-4.417-1.211l-.317-.188-2.969.779.792-2.894-.207-.329A8.132 8.132 0 013.833 12c0-4.503 3.664-8.167 8.167-8.167 4.503 0 8.167 3.664 8.167 8.167 0 4.503-3.664 8.167-8.167 8.167z"/>
+              </svg>
+              <span>WhatsApp</span>
+            </a>
+
             <!-- Direct Purchase CTA pointing to Kiwify -->
             <a
               [href]="comboKiwifyUrl"
@@ -186,17 +212,19 @@ import { Product } from '../../models/product.model';
           <a
             routerLink="/ingles"
             routerLinkActive="text-[#082B5C] font-bold border-b-2 border-[#082B5C] pb-1 -mb-1"
-            class="hover:text-[#082B5C] transition-colors"
+            class="hover:text-[#082B5C] transition-colors flex items-center gap-1"
           >
-            Inglês
+            <span>Inglês</span>
+            <span class="text-[9px] bg-amber-100 text-amber-900 px-1.5 py-0.2 rounded font-bold uppercase tracking-wider">Em breve</span>
           </a>
 
           <a
             routerLink="/programacao"
             routerLinkActive="text-[#082B5C] font-bold border-b-2 border-[#082B5C] pb-1 -mb-1"
-            class="hover:text-[#082B5C] transition-colors"
+            class="hover:text-[#082B5C] transition-colors flex items-center gap-1"
           >
-            Programação
+            <span>Programação</span>
+            <span class="text-[9px] bg-amber-100 text-amber-900 px-1.5 py-0.2 rounded font-bold uppercase tracking-wider">Em breve</span>
           </a>
         </nav>
       </div>
@@ -241,6 +269,20 @@ import { Product } from '../../models/product.model';
               <span class="text-[10px] bg-[#F7C51E] text-slate-900 px-2 py-0.5 rounded font-extrabold uppercase">Destaque</span>
             </a>
 
+            <!-- Brinde Gratuito 5 Mapas -->
+            <a
+              routerLink="/"
+              fragment="enem-brinde-gratis"
+              (click)="closeMobileMenu()"
+              class="px-3 py-2 rounded-xl bg-emerald-50 text-emerald-900 border border-emerald-200/60 font-bold flex items-center justify-between"
+            >
+              <div class="flex items-center gap-2">
+                <mat-icon class="!text-base text-emerald-600">card_giftcard</mat-icon>
+                <span>5 Mapas ENEM (Brinde Grátis)</span>
+              </div>
+              <span class="text-[10px] bg-emerald-600 text-white px-2 py-0.5 rounded font-black uppercase">Grátis</span>
+            </a>
+
             <a
               routerLink="/mapas-mentais"
               (click)="closeMobileMenu()"
@@ -273,7 +315,10 @@ import { Product } from '../../models/product.model';
               (click)="closeMobileMenu()"
               class="px-3 py-2 rounded-lg hover:bg-slate-100 transition-colors flex items-center justify-between"
             >
-              <span>Inglês</span>
+              <div class="flex items-center gap-2">
+                <span>Inglês</span>
+                <span class="text-[9px] bg-amber-100 text-amber-900 px-1.5 py-0.2 rounded font-bold uppercase tracking-wider">Em breve</span>
+              </div>
               <mat-icon class="!text-sm text-slate-400">chevron_right</mat-icon>
             </a>
 
@@ -282,12 +327,29 @@ import { Product } from '../../models/product.model';
               (click)="closeMobileMenu()"
               class="px-3 py-2 rounded-lg hover:bg-slate-100 transition-colors flex items-center justify-between"
             >
-              <span>Programação</span>
+              <div class="flex items-center gap-2">
+                <span>Programação</span>
+                <span class="text-[9px] bg-amber-100 text-amber-900 px-1.5 py-0.2 rounded font-bold uppercase tracking-wider">Em breve</span>
+              </div>
               <mat-icon class="!text-sm text-slate-400">chevron_right</mat-icon>
             </a>
           </div>
 
           <div class="pt-4 border-t border-slate-100 flex flex-col gap-2">
+            <!-- Direct WhatsApp mobile action -->
+            <a
+              [href]="whatsappUrl"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="w-full py-3.5 px-4 bg-[#25D366] hover:bg-[#1EBE5D] text-slate-950 font-display font-extrabold rounded-xl text-xs flex items-center justify-center gap-2 cursor-pointer shadow-md"
+            >
+              <svg class="w-4 h-4 fill-current shrink-0" viewBox="0 0 24 24">
+                <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.698.077-2.022-.472-1.688-.7-2.775-2.42-2.859-2.533-.084-.113-.683-.907-.683-1.731 0-.824.432-1.229.586-1.398.154-.17.336-.212.449-.212.112 0 .225.001.323.006.103.005.241-.039.377.29.144.35.488 1.19.531 1.277.043.088.072.19.014.305-.058.115-.088.187-.174.288-.087.101-.183.226-.261.304-.087.087-.178.182-.077.355.101.174.45 1.741 1.543 2.128.324.115.597.184.802.249.325.103.621.089.855.054.261-.039.805-.329.919-.646.114-.317.114-.588.08-.646-.034-.058-.124-.093-.268-.164z"/>
+                <path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2.05 22l4.982-1.307A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.167c-1.614 0-3.12-.442-4.417-1.211l-.317-.188-2.969.779.792-2.894-.207-.329A8.132 8.132 0 013.833 12c0-4.503 3.664-8.167 8.167-8.167 4.503 0 8.167 3.664 8.167 8.167 0 4.503-3.664 8.167-8.167 8.167z"/>
+              </svg>
+              <span>Dúvidas? Fale no WhatsApp: {{ whatsappPhone }}</span>
+            </a>
+
             <a
               [href]="comboKiwifyUrl"
               target="_blank"
@@ -390,6 +452,8 @@ export class Header {
   readonly suggestions = signal<Product[]>([]);
 
   readonly comboKiwifyUrl = 'https://pay.kiwify.com.br/nsHOTy9';
+  readonly whatsappUrl = WHATSAPP_URL;
+  readonly whatsappPhone = WHATSAPP_PHONE_FORMATTED;
 
   onSearchInput(event: Event): void {
     const input = event.target as HTMLInputElement;

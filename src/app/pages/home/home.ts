@@ -7,6 +7,7 @@ import { Benefits } from '../../components/benefits/benefits';
 import { Method } from '../../components/method/method';
 import { MindmapSpotlight } from '../../components/mindmap-spotlight/mindmap-spotlight';
 import { EnemSpecial } from '../../components/enem-special/enem-special';
+import { EnemFreeGift } from '../../components/enem-free-gift/enem-free-gift';
 import { Testimonials } from '../../components/testimonials/testimonials';
 import { Faq } from '../../components/faq/faq';
 import { Newsletter } from '../../components/newsletter/newsletter';
@@ -23,6 +24,7 @@ import { Newsletter } from '../../components/newsletter/newsletter';
     Method,
     MindmapSpotlight,
     EnemSpecial,
+    EnemFreeGift,
     Testimonials,
     Faq,
     Newsletter
@@ -52,6 +54,9 @@ import { Newsletter } from '../../components/newsletter/newsletter';
 
       <!-- Seção ENEM 2026 Exclusiva -->
       <app-enem-special />
+
+      <!-- Seção 5 Mapas ENEM Gratuito (Brinde Oficial) -->
+      <app-enem-free-gift />
 
       <!-- Depoimentos de Clientes -->
       <app-testimonials />
