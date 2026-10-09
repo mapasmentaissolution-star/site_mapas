@@ -4,7 +4,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { CatalogData } from '../../services/catalog-data';
 import { KiwifyCheckout } from '../../services/kiwify-checkout';
 import { Product } from '../../models/product.model';
-import { WHATSAPP_URL, WHATSAPP_PHONE_FORMATTED } from '../../data/products.data';
+import { WHATSAPP_URL, WHATSAPP_PHONE_FORMATTED, FREE_ENEM_PDF_URL } from '../../data/products.data';
 
 @Component({
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -16,8 +16,10 @@ import { WHATSAPP_URL, WHATSAPP_PHONE_FORMATTED } from '../../data/products.data
       <div class="max-w-7xl mx-auto flex items-center justify-between">
         <div class="flex items-center gap-2">
           <a
-            routerLink="/"
-            fragment="enem-brinde-gratis"
+            [href]="freePdfUrl"
+            target="_blank"
+            rel="noopener noreferrer"
+            download="mapa-enem-gratis.pdf"
             class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-[#F7C51E] hover:bg-amber-400 text-slate-950 font-black text-[11px] transition-all shadow-xs"
           >
             <span>🎁 PDF GRÁTIS:</span>
@@ -201,8 +203,10 @@ import { WHATSAPP_URL, WHATSAPP_PHONE_FORMATTED } from '../../data/products.data
 
           <!-- BRINDE GRÁTIS ENEM - EM SUPER DESTAQUE -->
           <a
-            routerLink="/"
-            fragment="enem-brinde-gratis"
+            [href]="freePdfUrl"
+            target="_blank"
+            rel="noopener noreferrer"
+            download="mapa-enem-gratis.pdf"
             class="relative inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-black text-xs shadow-md transition-all hover:scale-105 ring-2 ring-emerald-300/60"
             title="Baixar 5 Mapas Mentais do ENEM 2026 Gratuitamente em PDF"
           >
@@ -292,8 +296,10 @@ import { WHATSAPP_URL, WHATSAPP_PHONE_FORMATTED } from '../../data/products.data
 
             <!-- Brinde Gratuito 5 Mapas -->
             <a
-              routerLink="/"
-              fragment="enem-brinde-gratis"
+              [href]="freePdfUrl"
+              target="_blank"
+              rel="noopener noreferrer"
+              download="mapa-enem-gratis.pdf"
               (click)="closeMobileMenu()"
               class="px-3 py-2 rounded-xl bg-emerald-50 text-emerald-900 border border-emerald-200/60 font-bold flex items-center justify-between"
             >
@@ -475,6 +481,7 @@ export class Header {
   readonly comboKiwifyUrl = 'https://pay.kiwify.com.br/nsHOTy9';
   readonly whatsappUrl = WHATSAPP_URL;
   readonly whatsappPhone = WHATSAPP_PHONE_FORMATTED;
+  readonly freePdfUrl = FREE_ENEM_PDF_URL;
 
   onSearchInput(event: Event): void {
     const input = event.target as HTMLInputElement;

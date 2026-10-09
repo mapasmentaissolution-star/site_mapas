@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { MatIconModule } from '@angular/material/icon';
-import { WHATSAPP_URL, WHATSAPP_PHONE_FORMATTED } from '../../data/products.data';
+import { WHATSAPP_URL, WHATSAPP_PHONE_FORMATTED, FREE_ENEM_PDF_URL } from '../../data/products.data';
 
 @Component({
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -68,7 +68,7 @@ import { WHATSAPP_URL, WHATSAPP_PHONE_FORMATTED } from '../../data/products.data
                 </a>
               </li>
               <li>
-                <a routerLink="/" fragment="enem-brinde-gratis" class="hover:text-white transition-colors flex items-center gap-1 text-emerald-300 font-semibold">
+                <a [href]="freePdfUrl" target="_blank" rel="noopener noreferrer" download="mapa-enem-gratis.pdf" class="hover:text-white transition-colors flex items-center gap-1 text-emerald-300 font-semibold">
                   <span>5 Mapas ENEM (Brinde Grátis)</span>
                   <span class="text-[9px] bg-emerald-500 text-slate-950 px-1 py-0.2 rounded font-extrabold">PDF</span>
                 </a>
@@ -187,4 +187,5 @@ import { WHATSAPP_URL, WHATSAPP_PHONE_FORMATTED } from '../../data/products.data
 export class Footer {
   readonly whatsappUrl = WHATSAPP_URL;
   readonly whatsappPhone = WHATSAPP_PHONE_FORMATTED;
+  readonly freePdfUrl = FREE_ENEM_PDF_URL;
 }

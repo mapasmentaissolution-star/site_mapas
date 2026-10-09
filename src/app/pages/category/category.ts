@@ -5,6 +5,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { CatalogData } from '../../services/catalog-data';
 import { ProductCard } from '../../components/product-card/product-card';
 import { EnemFreeGift } from '../../components/enem-free-gift/enem-free-gift';
+import { FREE_ENEM_PDF_URL } from '../../data/products.data';
 
 @Component({
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -38,8 +39,8 @@ import { EnemFreeGift } from '../../components/enem-free-gift/enem-free-gift';
           </div>
         </div>
 
-        <!-- Aviso de "Em Breve" para Inglês e Programação -->
-        @if (currentSlug() === 'ingles' || currentSlug() === 'programacao') {
+        <!-- Aviso de "Em Breve" para categorias em desenvolvimento -->
+        @if (currentSlug() === 'ingles' || currentSlug() === 'programacao' || currentSlug() === 'estudos') {
           <div class="mb-8 p-5 rounded-2xl bg-amber-50 border border-amber-200/90 text-amber-950 flex items-start sm:items-center gap-3.5 shadow-xs">
             <div class="w-10 h-10 rounded-xl bg-amber-200/80 text-amber-900 flex items-center justify-center shrink-0 font-bold">
               <mat-icon class="!text-xl">hourglass_top</mat-icon>
@@ -72,8 +73,10 @@ import { EnemFreeGift } from '../../components/enem-free-gift/enem-free-gift';
             </div>
 
             <a
-              routerLink="/"
-              fragment="enem-brinde-gratis"
+              [href]="freePdfUrl"
+              target="_blank"
+              rel="noopener noreferrer"
+              download="mapa-enem-gratis.pdf"
               class="w-full md:w-auto px-6 py-3.5 bg-[#F7C51E] hover:bg-amber-400 text-slate-950 font-display font-black text-xs sm:text-sm rounded-xl transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5 shrink-0 flex items-center justify-center gap-2 uppercase tracking-wider cursor-pointer"
             >
               <mat-icon class="!text-lg text-[#082B5C]">download</mat-icon>
@@ -143,6 +146,7 @@ export class CategoryPage {
 
   readonly routeData = toSignal(this.route.url);
   readonly selectedSort = signal<string>('featured');
+  readonly freePdfUrl = FREE_ENEM_PDF_URL;
 
   readonly currentSlug = computed(() => {
     const url = this.routeData();

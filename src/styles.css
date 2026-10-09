@@ -33,3 +33,16 @@
 .transition-luxury {
   transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
 }
+
+/* Remove Netlify overlay/footer widgets when they appear on preview deployments */
+[class*="netlify"],
+[id*="netlify"],
+[data-netlify],
+iframe[src*="netlify"],
+a[href*="netlify"],
+[aria-label*="Netlify"],
+[title*="Netlify"] {
+  display: none !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}

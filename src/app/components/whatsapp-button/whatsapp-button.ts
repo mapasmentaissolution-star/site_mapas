@@ -8,7 +8,7 @@ import { WHATSAPP_URL, WHATSAPP_PHONE_FORMATTED } from '../../data/products.data
   imports: [MatIconModule],
   template: `
     <!-- Floating WhatsApp Widget -->
-    <div class="fixed bottom-6 right-6 z-50 flex items-center gap-3">
+    <div class="fixed bottom-6 right-6 z-[9999] flex items-center gap-3">
       <!-- Tooltip Bubble (Disappear on close or hover) -->
       @if (showTooltip()) {
         <div class="hidden sm:flex items-center gap-2 bg-white text-slate-800 text-xs py-2 px-3.5 rounded-2xl shadow-xl border border-slate-200/90 animate-bounce duration-1000">

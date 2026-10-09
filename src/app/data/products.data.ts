@@ -44,7 +44,7 @@ export const CATEGORIES: CategoryInfo[] = [
     description: 'Conteúdos estruturados para escola, faculdade, concursos públicos e técnicas de memorização.',
     icon: 'school',
     color: '#0D4F91',
-    badgeText: 'Concursos & Graduação'
+    badgeText: 'Em Breve'
   },
   {
     id: 'ingles',
@@ -280,7 +280,7 @@ export const PRODUCTS: Product[] = [
     fullDescription: 'Criado especialmente para quem estuda para concursos públicos, faculdade ou certificações e precisa reter grandes volumes de conteúdo em pouco tempo. Inclui resumos estruturados dos temas mais recorrentes de Direito Constitucional, Administrativo, Língua Portuguesa e o método mnemônico Mappia de revisão ativa.',
     price: 32.90,
     originalPrice: 65.00,
-    badge: 'CONCURSOS',
+    badge: 'EM BREVE',
     categories: ['estudos', 'mapas-mentais'],
     image: '/assets/images/product_estudos_mockup_1790962993357.jpg',
     mapsCount: 80,
@@ -290,6 +290,7 @@ export const PRODUCTS: Product[] = [
     reviewsCount: 750,
     isFeatured: true,
     isBestSeller: false,
+    isComingSoon: true,
     kiwifyCheckoutUrl: 'https://pay.kiwify.com.br/mappia-concursos-mapas',
     subjects: [
       'Direito Constitucional: Direitos Fundamentais e Organização do Estado',
