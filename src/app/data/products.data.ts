@@ -1,6 +1,6 @@
 import { Product, CategoryInfo, Testimonial, FaqItem } from '../models/product.model';
 
-export const FREE_ENEM_DRIVE_URL = 'https://drive.google.com/drive/folders/1mappia-enem-5-mapas-gratuitos?usp=sharing';
+export const FREE_ENEM_PDF_URL = '/assets/mapa-enem-gratis.pdf';
 export const WHATSAPP_PHONE = '11987973086';
 export const WHATSAPP_PHONE_FORMATTED = '(11) 98797-3086';
 export const WHATSAPP_URL = 'https://wa.me/5511987973086?text=Ol%C3%A1%2C%20gostaria%20de%20tirar%20d%C3%BAvidas%20sobre%20os%20mapas%20mentais%20da%20Mappia!';
@@ -87,7 +87,7 @@ export const PRODUCTS: Product[] = [
     reviewsCount: 2340,
     isFeatured: true,
     isBestSeller: true,
-    kiwifyCheckoutUrl: FREE_ENEM_DRIVE_URL,
+    kiwifyCheckoutUrl: FREE_ENEM_PDF_URL,
     subjects: [
       'Matemática: Porcentagem no ENEM (Fórmulas e Casos Práticos)',
       'Ciências Humanas: Revolução Industrial (1ª e 2ª Fases)',
@@ -99,7 +99,7 @@ export const PRODUCTS: Product[] = [
       'Arquivo PDF completo em alta resolução pronto para impressão em A4',
       '5 Mapas Mentais ilustrados das 5 áreas do conhecimento',
       'Esquemas mnemônicos e dicas do que mais cai na prova',
-      'Download imediato e direto pelo Google Drive, sem custo'
+      'Download imediato e direto em PDF, sem custo'
     ],
     targetAudience: [
       'Estudantes que vão prestar o ENEM 2026 e querem conhecer os mapas da Mappia',

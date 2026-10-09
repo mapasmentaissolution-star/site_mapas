@@ -144,8 +144,9 @@ import { KiwifyCheckout } from '../../services/kiwify-checkout';
                 [href]="product().kiwifyCheckoutUrl"
                 target="_blank"
                 rel="noopener noreferrer"
+                download="mapa-enem-gratis.pdf"
                 class="inline-flex items-center gap-1.5 px-3.5 py-2 text-xs font-black text-slate-950 bg-[#F7C51E] hover:bg-amber-400 rounded-xl transition-all shadow-md hover:shadow-lg hover:-translate-y-0.5 cursor-pointer whitespace-nowrap animate-pulse"
-                title="Baixar 5 Mapas ENEM Grátis no Google Drive"
+                title="Baixar 5 Mapas ENEM Grátis em PDF"
               >
                 <mat-icon class="!text-sm text-[#082B5C] !w-3.5 !h-3.5">download</mat-icon>
                 <span>BAIXAR GRÁTIS</span>

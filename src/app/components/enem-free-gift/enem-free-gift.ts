@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, input } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
-import { FREE_ENEM_DRIVE_URL } from '../../data/products.data';
+import { FREE_ENEM_PDF_URL } from '../../data/products.data';
 
 @Component({
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -64,7 +64,7 @@ import { FREE_ENEM_DRIVE_URL } from '../../data/products.data';
               </span>
               <span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-300 text-xs font-bold border border-emerald-400/40">
                 <mat-icon class="!text-sm !w-4 !h-4 text-emerald-400">verified</mat-icon>
-                <span>Download Direto pelo Google Drive</span>
+                <span>Download Direto em PDF</span>
               </span>
               <span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-white/10 text-slate-200 text-xs font-semibold">
                 <span>Sem necessidade de cadastro</span>
@@ -140,6 +140,7 @@ import { FREE_ENEM_DRIVE_URL } from '../../data/products.data';
                 [href]="driveUrl"
                 target="_blank"
                 rel="noopener noreferrer"
+                download="mapa-enem-gratis.pdf"
                 class="inline-flex items-center justify-center gap-3 px-8 py-5 bg-[#F7C51E] hover:bg-amber-400 text-slate-950 font-display font-black text-sm sm:text-base rounded-2xl transition-all shadow-2xl hover:shadow-amber-400/30 hover:-translate-y-1 cursor-pointer uppercase tracking-wider ring-4 ring-white/20 group"
               >
                 <mat-icon class="!text-2xl text-[#082B5C] group-hover:translate-y-0.5 transition-transform">download</mat-icon>
@@ -149,7 +150,7 @@ import { FREE_ENEM_DRIVE_URL } from '../../data/products.data';
               <div class="flex flex-col text-xs text-slate-300">
                 <div class="flex items-center gap-1.5 font-semibold text-emerald-400">
                   <mat-icon class="!text-base">cloud_download</mat-icon>
-                  <span>Acesso imediato no Google Drive</span>
+                  <span>Download direto do PDF</span>
                 </div>
                 <span class="text-[11px] text-slate-400">Clique para abrir ou salvar o PDF agora</span>
               </div>
@@ -163,5 +164,5 @@ import { FREE_ENEM_DRIVE_URL } from '../../data/products.data';
 })
 export class EnemFreeGift {
   readonly giftImage = input<string>('/assets/images/enem-brinde.png');
-  readonly driveUrl = FREE_ENEM_DRIVE_URL;
+  readonly driveUrl = FREE_ENEM_PDF_URL;
 }
