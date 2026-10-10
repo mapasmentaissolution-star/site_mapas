@@ -41,10 +41,10 @@ export const CATEGORIES: CategoryInfo[] = [
     slug: 'estudos',
     title: 'Estudos & Concursos',
     shortTitle: 'Estudos',
-    description: 'Conteúdos estruturados para escola, faculdade, concursos públicos e técnicas de memorização.',
+    description: 'Mapas mentais para ETEC, escola, faculdade e concursos, com conteúdos organizados para facilitar a revisão.',
     icon: 'school',
     color: '#0D4F91',
-    badgeText: 'Em Breve'
+    badgeText: 'ETEC disponível'
   },
   {
     id: 'ingles',
@@ -271,6 +271,30 @@ export const PRODUCTS: Product[] = [
       'Quem está aprendendo inglês e se confunde com regras gramaticais',
       'Estudantes que buscam memorizar vocabulário de forma rápida e visual'
     ]
+  },
+  {
+    id: 'etec-mapas-mentais',
+    slug: 'etec-mapas-mentais',
+    title: 'MAPAS MENTAIS PARA ETEC',
+    shortDescription: 'Mapas mentais para revisar os conteúdos e se preparar para o Vestibulinho ETEC.',
+    fullDescription: 'Prepare-se para o Vestibulinho ETEC com mapas mentais que organizam os conteúdos de estudo em esquemas visuais para facilitar a revisão e a memorização.',
+    price: 19.99,
+    badge: 'ETEC',
+    categories: ['estudos', 'mapas-mentais'],
+    image: '/assets/images/etec-mapas.png',
+    format: 'PDF Digital',
+    rating: 0,
+    reviewsCount: 0,
+    whatYouGet: [
+      'Mapas mentais digitais para apoiar a preparação para o Vestibulinho ETEC',
+      'Conteúdo visual para revisar e memorizar os estudos'
+    ],
+    targetAudience: [
+      'Estudantes que estão se preparando para o Vestibulinho ETEC'
+    ],
+    isFeatured: true,
+    isBestSeller: false,
+    kiwifyCheckoutUrl: 'https://pay.kiwify.com.br/2XXUr8M'
   },
   {
     id: 'estudos-concursos-mapas-mentais',

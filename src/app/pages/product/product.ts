@@ -100,7 +100,11 @@ import { WHATSAPP_URL, WHATSAPP_PHONE_FORMATTED } from '../../data/products.data
                 <div class="flex items-center gap-2 mb-3">
                   <div class="flex items-center text-amber-500">
                     @for (s of [1,2,3,4,5]; track s) {
-                      <mat-icon class="!text-base !w-4 !h-4">star</mat-icon>
+                      <mat-icon
+                        class="!text-base !w-4 !h-4"
+                        [class.text-amber-500]="s <= prod.rating"
+                        [class.text-slate-200]="s > prod.rating"
+                      >star</mat-icon>
                     }
                   </div>
                   <span class="text-xs font-bold text-slate-800">{{ prod.rating }}</span>

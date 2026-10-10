@@ -40,7 +40,7 @@ import { FREE_ENEM_PDF_URL } from '../../data/products.data';
         </div>
 
         <!-- Aviso de "Em Breve" para categorias em desenvolvimento -->
-        @if (currentSlug() === 'ingles' || currentSlug() === 'programacao' || currentSlug() === 'estudos') {
+        @if (currentSlug() === 'ingles' || currentSlug() === 'programacao') {
           <div class="mb-8 p-5 rounded-2xl bg-amber-50 border border-amber-200/90 text-amber-950 flex items-start sm:items-center gap-3.5 shadow-xs">
             <div class="w-10 h-10 rounded-xl bg-amber-200/80 text-amber-900 flex items-center justify-center shrink-0 font-bold">
               <mat-icon class="!text-xl">hourglass_top</mat-icon>

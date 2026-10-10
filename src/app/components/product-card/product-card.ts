@@ -72,7 +72,7 @@ import { KiwifyCheckout } from '../../services/kiwify-checkout';
         <!-- Rating & Category -->
         <div class="flex items-center justify-between text-xs text-slate-500 mb-2">
           <span class="font-medium text-[#0D4F91] uppercase tracking-wider text-[11px]">
-            {{ product().mapsCount ? product().mapsCount + ' mapas mentais' : '40 questões oficiais' }}
+            {{ product().mapsCount ? product().mapsCount + ' mapas mentais' : (product().categories.includes('mapas-mentais') ? 'Mapas mentais' : '40 questões oficiais') }}
           </span>
           <div class="flex items-center gap-1 text-amber-500">
             <mat-icon class="!text-sm !w-3.5 !h-3.5">star</mat-icon>
