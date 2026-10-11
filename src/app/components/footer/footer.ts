@@ -122,9 +122,9 @@ import { WHATSAPP_URL, WHATSAPP_PHONE_FORMATTED, FREE_ENEM_PDF_URL } from '../..
                 <a routerLink="/" fragment="faq" class="hover:text-white transition-colors">Dúvidas frequentes</a>
               </li>
               <li>
-                <a href="mailto:contato@mappia.com.br" class="hover:text-white transition-colors flex items-center gap-1.5">
+                <a href="mailto:mapasmentaissolution@gmail.com" class="hover:text-white transition-colors flex items-center gap-1.5">
                   <mat-icon class="!text-sm !w-4 !h-4 text-[#F7C51E]">mail</mat-icon>
-                  <span>contato&#64;mappia.com.br</span>
+                  <span>mapasmentaissolution&#64;gmail.com</span>
                 </a>
               </li>
               <li>

@@ -121,6 +121,11 @@ import { WHATSAPP_URL, WHATSAPP_PHONE_FORMATTED } from '../../data/products.data
                   {{ prod.shortDescription }}
                 </p>
 
+                <p class="flex items-center gap-2 text-xs text-slate-600 mb-4">
+                  <mat-icon class="!text-base !w-4 !h-4 text-[#0D4F91]">smartphone</mat-icon>
+                  <span>O PDF pode ser lido no celular, tablet ou computador.</span>
+                </p>
+
                 <!-- Format Pill -->
                 <div class="inline-flex items-center gap-2 px-3 py-1 bg-[#EAF3FC] text-[#0D4F91] rounded-lg text-xs font-bold mb-6">
                   <mat-icon class="!text-sm !w-4 !h-4">download</mat-icon>

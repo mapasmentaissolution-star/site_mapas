@@ -236,6 +236,30 @@ export const PRODUCTS: Product[] = [
     ]
   },
   {
+    id: 'enciclopedia-biblica',
+    slug: 'enciclopedia-biblica',
+    title: 'ENCICLOPÉDIA BÍBLICA',
+    shortDescription: 'Consulte conteúdos bíblicos organizados em uma enciclopédia digital para apoiar seus estudos.',
+    fullDescription: 'Uma enciclopédia bíblica digital para quem deseja consultar e aprofundar seus estudos das Escrituras de forma organizada.',
+    price: 34.99,
+    badge: 'ENCICLOPÉDIA',
+    categories: ['biblicos', 'mapas-mentais'],
+    image: '/assets/images/enciclopedia-mapas.png',
+    format: 'PDF Digital',
+    rating: 0,
+    reviewsCount: 0,
+    whatYouGet: [
+      'Enciclopédia bíblica digital em PDF',
+      'Conteúdo para consulta e estudo das Escrituras'
+    ],
+    targetAudience: [
+      'Pessoas que desejam aprofundar seus estudos bíblicos'
+    ],
+    isFeatured: true,
+    isBestSeller: false,
+    kiwifyCheckoutUrl: 'https://pay.kiwify.com.br/56GNF6M'
+  },
+  {
     id: 'ingles-em-mapas-mentais',
     slug: 'ingles-em-mapas-mentais',
     title: 'INGLÊS EM MAPAS MENTAIS',
@@ -437,6 +461,6 @@ export const FAQS: FaqItem[] = [
   },
   {
     question: 'Posso estudar pelo celular ou tablet?',
-    answer: 'Com certeza! Os arquivos PDF são compatíveis com qualquer smartphone iOS e Android, tablets, iPads (GoodNotes, Notability) e computadores.'
+    answer: 'Com certeza! Você pode ler os arquivos PDF no celular (iOS ou Android), tablet, iPad (GoodNotes, Notability) ou computador.'
   }
 ];

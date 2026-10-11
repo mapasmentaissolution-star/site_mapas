@@ -93,6 +93,11 @@ import { KiwifyCheckout } from '../../services/kiwify-checkout';
           {{ product().shortDescription }}
         </p>
 
+        <div class="flex items-center gap-1.5 text-[10px] text-slate-500 mb-3">
+          <mat-icon class="!text-xs !w-3.5 !h-3.5 text-[#0D4F91]">smartphone</mat-icon>
+          <span>PDF para ler no celular, tablet ou computador</span>
+        </div>
+
         @if (product().isComingSoon) {
           <div class="mb-3 text-[10px] text-amber-800 bg-amber-50 border border-amber-200 rounded-md px-2.5 py-1 font-medium flex items-center gap-1">
             <mat-icon class="!text-xs !w-3.5 !h-3.5 text-amber-600">info</mat-icon>
