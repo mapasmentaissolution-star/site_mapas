@@ -20,7 +20,7 @@ import { MatIconModule } from '@angular/material/icon';
                 class="relative rounded-2xl overflow-hidden shadow-2xl border border-slate-200 bg-slate-900 group cursor-pointer text-left w-full p-0 block"
               >
                 <img
-                  src="/assets/images/mockup_enem_mapas_1790955321600.jpg"
+                  src="/assets/images/combo-enem.png"
                   alt="Amostra de página de mapa mental Mappia com ramificações estruturadas"
                   referrerpolicy="no-referrer"
                   class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500 opacity-95 group-hover:opacity-100"

@@ -85,7 +85,7 @@ import { MatIconModule } from '@angular/material/icon';
             <div class="relative w-full max-w-sm">
               <div class="rounded-2xl overflow-hidden shadow-xl border border-slate-200 bg-white">
                 <img
-                  src="/assets/images/mockup_combo_enem_1790993357131.jpg"
+                  src="/assets/images/combo-enem.png"
                   alt="Combo ENEM 2026 Mapas Mentais mais Simulado da Mappia"
                   referrerpolicy="no-referrer"
                   class="w-full h-72 object-cover object-top"
