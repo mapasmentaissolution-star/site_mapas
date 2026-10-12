@@ -239,8 +239,8 @@ export const PRODUCTS: Product[] = [
     id: 'enciclopedia-biblica',
     slug: 'enciclopedia-biblica',
     title: 'ENCICLOPÉDIA BÍBLICA',
-    shortDescription: 'Consulte conteúdos bíblicos organizados em uma enciclopédia digital para apoiar seus estudos.',
-    fullDescription: 'Uma enciclopédia bíblica digital para quem deseja consultar e aprofundar seus estudos das Escrituras de forma organizada.',
+    shortDescription: 'Uma jornada visual por 184 mapas mentais sobre a Bíblia, seus livros, personagens, lugares, acontecimentos e grandes temas.',
+    fullDescription: 'Explore as Escrituras de forma visual e organizada com uma enciclopédia bíblica composta por 184 mapas mentais. O conteúdo percorre a estrutura da Bíblia, o Antigo e o Novo Testamento, seus livros e personagens, lugares e geografia bíblica, a vida e o ministério de Jesus e grandes temas como criação, aliança, fé, graça, salvação, Igreja e vida eterna.',
     price: 34.99,
     badge: 'ENCICLOPÉDIA',
     categories: ['biblicos', 'mapas-mentais'],
@@ -248,12 +248,27 @@ export const PRODUCTS: Product[] = [
     format: 'PDF Digital',
     rating: 0,
     reviewsCount: 0,
+    mapsCount: 184,
+    subjects: [
+      'A Bíblia: organização, divisões, autores, épocas, contextos, alianças e linha do tempo',
+      'Antigo Testamento: Pentateuco, livros históricos, poéticos, sapienciais e profetas',
+      'Novo Testamento: Evangelhos, Atos dos Apóstolos, cartas de Paulo, cartas gerais e Apocalipse',
+      'Personagens do Antigo Testamento: de Adão e Eva a Sansão, Davi, Salomão e Daniel',
+      'Personagens do Novo Testamento: Maria, João Batista, apóstolos, discípulos e líderes da Igreja primitiva',
+      'Lugares e geografia bíblica: Jerusalém, Belém, Nazaré, Galileia, Egito, Babilônia, Éfeso, Corinto e Roma',
+      'Vida e ministério de Jesus: nascimento, batismo, parábolas, milagres, ensinamentos, morte e ressurreição',
+      'Grandes temas bíblicos: criação, pecado, aliança, lei, fé, graça, salvação, amor, perdão e oração',
+      'Temas do Novo Testamento: adoração, Reino de Deus, Igreja, discipulado, Espírito Santo e dons espirituais',
+      'Esperança cristã: evangelismo, segunda vinda de Cristo, ressurreição e vida eterna'
+    ],
     whatYouGet: [
-      'Enciclopédia bíblica digital em PDF',
-      'Conteúdo para consulta e estudo das Escrituras'
+      '184 mapas mentais em PDF, organizados em oito partes temáticas',
+      'Panorama visual dos livros, personagens, lugares, acontecimentos e temas centrais da Bíblia',
+      'Material de consulta e revisão para acompanhar estudos individuais ou em grupo'
     ],
     targetAudience: [
-      'Pessoas que desejam aprofundar seus estudos bíblicos'
+      'Pessoas que desejam estudar e consultar a Bíblia de forma visual e organizada',
+      'Professores, líderes, estudantes e grupos de estudo bíblico'
     ],
     isFeatured: true,
     isBestSeller: false,
@@ -348,8 +363,8 @@ export const PRODUCTS: Product[] = [
     id: 'cgu-2026-auditoria',
     slug: 'cgu-2026-auditoria',
     title: 'CGU 2026 — AUDITORIA',
-    shortDescription: 'Material digital de apoio para quem está se preparando para o concurso da CGU 2026 na área de Auditoria.',
-    fullDescription: 'Prepare-se para o concurso da Controladoria-Geral da União (CGU) 2026 na área de Auditoria com este material digital de apoio aos seus estudos.',
+    shortDescription: 'Mapas mentais de Auditoria Governamental, Finanças Públicas, Orçamento e Contabilidade Pública para o concurso CGU 2026.',
+    fullDescription: 'Prepare-se para o concurso da Controladoria-Geral da União (CGU) 2026 na área de Auditoria com mapas mentais de conhecimentos específicos. O conteúdo está organizado em dois grandes eixos: Auditoria Governamental — avaliação, consultoria, apuração, planejamento, riscos, testes, amostragem, evidências, supervisão, fraude, auditoria de dados, relatórios e qualidade — e Finanças Públicas, Orçamento e Contabilidade Pública — economia e funções do Estado, tributação, resultados fiscais, PPA, LDO, LOA, execução orçamentária, receitas, despesas, Conta Única do Tesouro, transparência, demonstrações contábeis, custos, MCASP e governança.',
     price: 19.99,
     badge: 'CGU 2026',
     categories: ['estudos'],
@@ -359,7 +374,41 @@ export const PRODUCTS: Product[] = [
     rating: 0,
     reviewsCount: 0,
     whatYouGet: [
-      'Material digital de apoio para a preparação em Auditoria'
+      'Mapas mentais organizados em dois eixos: Auditoria Governamental e Finanças Públicas, Orçamento e Contabilidade Pública',
+      'Índice com 31 tópicos de conhecimentos específicos para orientar a revisão'
+    ],
+    subjects: [
+      'Auditoria Governamental: avaliação, consultoria e apuração',
+      'Planejamento técnico do trabalho',
+      'Risco de auditoria, objetivos, escopo e critérios',
+      'Matriz de planejamento e programa de trabalho',
+      'Testes de auditoria e procedimentos',
+      'Amostragem estatística e por julgamento',
+      'Achados de auditoria: critério, condição, causa e efeito',
+      'Evidências, documentação e papéis de trabalho',
+      'Supervisão, revisão e contratação técnica',
+      'Indícios de fraude e aprofundamento das análises',
+      'Auditoria de dados e inteligência artificial',
+      'Relatórios, recomendações e monitoramento',
+      'Qualidade, benefícios e melhoria contínua',
+      'Economia do setor público e funções do Estado',
+      'Tributação e financiamento das políticas públicas',
+      'Resultado primário, resultado nominal e déficit público',
+      'Sustentabilidade fiscal',
+      'Plano Plurianual (PPA)',
+      'Lei de Diretrizes Orçamentárias (LDO)',
+      'Lei Orçamentária Anual (LOA)',
+      'Classificações e alterações orçamentárias',
+      'Execução orçamentária e financeira',
+      'Receita pública: etapas e classificações',
+      'Despesa pública: empenho, liquidação e pagamento',
+      'Restos a pagar e Conta Única do Tesouro',
+      'Transparência e informações fiscais',
+      'Demonstrações contábeis do setor público',
+      'Contabilidade de custos no setor público',
+      'MCASP, 11ª edição, e normas de contabilidade pública',
+      'Provisões, contingências e empresas estatais',
+      'Governança e demonstrações financeiras das empresas estatais'
     ],
     targetAudience: [
       'Candidatos ao concurso da CGU 2026 na área de Auditoria'
