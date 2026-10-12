@@ -196,6 +196,44 @@ export const PRODUCTS: Product[] = [
     ]
   },
   {
+    id: 'detran-sp-2026-simulado-completo',
+    slug: 'detran-sp-2026-simulado-completo',
+    title: 'DETRAN-SP 2026 — SIMULADO COMPLETO + GABARITO COMENTADO + GUIA BÔNUS',
+    shortDescription: 'Simulado com 60 questões, gabarito comentado por matéria, proposta de redação e guia bônus de revisão expressa.',
+    fullDescription: 'Prepare-se para o DETRAN-SP 2026 com um material completo de revisão: simulado com 60 questões, folha de respostas, gabarito comentado, proposta de redação com textos motivadores e critérios de avaliação, além de um guia bônus de revisão expressa com checklist final.',
+    price: 19.99,
+    badge: 'DETRAN-SP 2026',
+    categories: ['estudos'],
+    image: '/assets/images/detran.png',
+    contentLabel: 'Simulado · 60 questões + bônus',
+    format: 'PDF + Gabarito + Guia',
+    rating: 0,
+    reviewsCount: 0,
+    subjects: [
+      'Língua Portuguesa',
+      'Matemática e Raciocínio Lógico',
+      'Noções de Informática',
+      'Direito Constitucional',
+      'Direito Administrativo',
+      'Legislação de Trânsito',
+      'Redação',
+      'Revisão expressa e checklist final'
+    ],
+    whatYouGet: [
+      'Caderno de simulado completo com 60 questões e modelo de folha de respostas',
+      'Gabarito comentado de Português, Matemática e Raciocínio Lógico, Informática, Direito Constitucional, Direito Administrativo e Legislação de Trânsito',
+      'Proposta de redação com textos motivadores, orientações e espaço para rascunho',
+      'Guia bônus de revisão expressa com checklist final'
+    ],
+    targetAudience: [
+      'Candidatos que estão se preparando para o DETRAN-SP 2026',
+      'Estudantes que querem praticar questões e revisar os principais conteúdos antes da prova'
+    ],
+    isFeatured: true,
+    isBestSeller: false,
+    kiwifyCheckoutUrl: 'https://pay.kiwify.com.br/Ce0ayHQ'
+  },
+  {
     id: 'biblia-em-mapas-mentais',
     slug: 'biblia-em-mapas-mentais',
     title: 'BÍBLIA EM MAPAS MENTAIS',
