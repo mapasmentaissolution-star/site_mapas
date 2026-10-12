@@ -345,6 +345,30 @@ export const PRODUCTS: Product[] = [
     kiwifyCheckoutUrl: 'https://pay.kiwify.com.br/v2Fji79'
   },
   {
+    id: 'cgu-2026-auditoria',
+    slug: 'cgu-2026-auditoria',
+    title: 'CGU 2026 — AUDITORIA',
+    shortDescription: 'Material digital de apoio para quem está se preparando para o concurso da CGU 2026 na área de Auditoria.',
+    fullDescription: 'Prepare-se para o concurso da Controladoria-Geral da União (CGU) 2026 na área de Auditoria com este material digital de apoio aos seus estudos.',
+    price: 19.99,
+    badge: 'CGU 2026',
+    categories: ['estudos'],
+    image: '/assets/images/cgu-auditoria.png',
+    contentLabel: 'Preparatório CGU 2026 · Auditoria',
+    format: 'PDF Digital',
+    rating: 0,
+    reviewsCount: 0,
+    whatYouGet: [
+      'Material digital de apoio para a preparação em Auditoria'
+    ],
+    targetAudience: [
+      'Candidatos ao concurso da CGU 2026 na área de Auditoria'
+    ],
+    isFeatured: true,
+    isBestSeller: false,
+    kiwifyCheckoutUrl: 'https://pay.kiwify.com.br/sX6Dcdt'
+  },
+  {
     id: 'estudos-concursos-mapas-mentais',
     slug: 'estudos-concursos-mapas-mentais',
     title: 'ESTUDOS & CONCURSOS EM MAPAS MENTAIS',
