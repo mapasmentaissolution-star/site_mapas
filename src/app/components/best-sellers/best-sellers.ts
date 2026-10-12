@@ -36,5 +36,5 @@ import { ProductCard } from '../product-card/product-card';
 })
 export class BestSellers {
   private readonly catalogData = inject(CatalogData);
-  readonly products = this.catalogData.getAllProducts();
+  readonly products = this.catalogData.getFeaturedProducts();
 }
