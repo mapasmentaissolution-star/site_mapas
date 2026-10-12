@@ -321,6 +321,30 @@ export const PRODUCTS: Product[] = [
     kiwifyCheckoutUrl: 'https://pay.kiwify.com.br/2XXUr8M'
   },
   {
+    id: 'simulador-etec-2027',
+    slug: 'simulador-etec-2027',
+    title: 'SIMULADOR ETEC 2027',
+    shortDescription: 'Pratique e revise os conteúdos para o Vestibulinho ETEC 2027 com um simulador de prova.',
+    fullDescription: 'Prepare-se para o Vestibulinho ETEC 2027 com o Simulador ETEC, um material digital para praticar seus estudos e revisar antes da prova.',
+    price: 9.99,
+    badge: 'ETEC 2027',
+    categories: ['estudos'],
+    image: '/assets/images/simulado-etec.png',
+    contentLabel: 'Simulador de prova ETEC 2027',
+    format: 'PDF Digital',
+    rating: 0,
+    reviewsCount: 0,
+    whatYouGet: [
+      'Material digital para praticar para o Vestibulinho ETEC 2027'
+    ],
+    targetAudience: [
+      'Estudantes que estão se preparando para o Vestibulinho ETEC 2027'
+    ],
+    isFeatured: true,
+    isBestSeller: false,
+    kiwifyCheckoutUrl: 'https://pay.kiwify.com.br/v2Fji79'
+  },
+  {
     id: 'estudos-concursos-mapas-mentais',
     slug: 'estudos-concursos-mapas-mentais',
     title: 'ESTUDOS & CONCURSOS EM MAPAS MENTAIS',

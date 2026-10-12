@@ -9,6 +9,7 @@ export interface Product {
   badge?: string;
   categories: string[];
   image: string;
+  contentLabel?: string;
   gallery?: string[];
   mapsCount?: number;
   format: string;
