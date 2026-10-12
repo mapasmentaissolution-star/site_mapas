@@ -98,7 +98,7 @@ import { MatIconModule } from '@angular/material/icon';
             </div>
           </div>
 
-          <!-- Estudos & Concursos -->
+          <!-- Concursos/Vestibulares -->
           <div class="group relative flex flex-col justify-between p-6 rounded-3xl border border-slate-200/80 bg-[#F6F8FA] hover:bg-white hover:border-amber-400/40 hover:shadow-lg transition-all duration-300 overflow-hidden">
             <div>
               <div class="flex items-center justify-between mb-4">
@@ -112,7 +112,7 @@ import { MatIconModule } from '@angular/material/icon';
               </div>
 
               <h3 class="font-display font-black text-slate-900 text-lg mb-2 group-hover:text-[#0D4F91] transition-colors">
-                Estudos
+                Concursos/Vestibulares
               </h3>
 
               <p class="text-xs text-slate-600 line-clamp-3 leading-relaxed mb-4">

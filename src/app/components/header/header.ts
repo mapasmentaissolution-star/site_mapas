@@ -231,7 +231,7 @@ import { WHATSAPP_URL, WHATSAPP_PHONE_FORMATTED, FREE_ENEM_PDF_URL } from '../..
             routerLinkActive="text-[#082B5C] font-bold border-b-2 border-[#082B5C] pb-1 -mb-1"
             class="hover:text-[#082B5C] transition-colors"
           >
-            Estudos
+            Concursos/Vestibulares
           </a>
 
           <a
@@ -333,7 +333,7 @@ import { WHATSAPP_URL, WHATSAPP_PHONE_FORMATTED, FREE_ENEM_PDF_URL } from '../..
               (click)="closeMobileMenu()"
               class="px-3 py-2 rounded-lg hover:bg-slate-100 transition-colors flex items-center justify-between"
             >
-              <span>Estudos & Concursos</span>
+              <span>Concursos/Vestibulares</span>
               <mat-icon class="!text-sm text-slate-400">chevron_right</mat-icon>
             </a>
 

@@ -39,8 +39,8 @@ export const CATEGORIES: CategoryInfo[] = [
   {
     id: 'estudos',
     slug: 'estudos',
-    title: 'Estudos & Concursos',
-    shortTitle: 'Estudos',
+    title: 'Concursos/Vestibulares',
+    shortTitle: 'Concursos/Vestibulares',
     description: 'Mapas mentais para ETEC, escola, faculdade e concursos, com conteúdos organizados para facilitar a revisão.',
     icon: 'school',
     color: '#0D4F91',

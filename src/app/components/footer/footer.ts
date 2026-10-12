@@ -80,7 +80,7 @@ import { WHATSAPP_URL, WHATSAPP_PHONE_FORMATTED, FREE_ENEM_PDF_URL } from '../..
               </li>
               <li>
                 <a routerLink="/estudos" class="hover:text-white transition-colors">
-                  Estudos & Concursos
+                  Concursos/Vestibulares
                 </a>
               </li>
               <li>
