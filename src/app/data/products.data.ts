@@ -315,38 +315,37 @@ export const PRODUCTS: Product[] = [
   {
     id: 'ingles-em-mapas-mentais',
     slug: 'ingles-em-mapas-mentais',
-    title: 'INGLÊS EM MAPAS MENTAIS',
-    shortDescription: 'Aprenda e destrave seu inglês com mapas mentais de gramática, tempos verbais, phrasal verbs e vocabulário prático do dia a dia.',
-    fullDescription: 'O método visual para finalmente dominar a gramática e destravar a conversação em inglês. Com esquemas mnemônicos, mapas de tempos verbais (Past, Present, Future, Perfect Tenses), conectivos, preposições (In, On, At) e os 100 Phrasal Verbs mais usados. Esqueça regras confusas e decorebas maçantes.',
-    price: 27.90,
-    originalPrice: 54.90,
-    badge: 'EM BREVE',
+    title: 'INGLÊS DO ZERO EM MAPAS MENTAIS — VOLUME 1 + BÔNUS | MAPPIA ESTUDOS',
+    shortDescription: 'Volume iniciante com mapas mentais de vocabulário, gramática essencial e situações práticas do dia a dia, além de bônus de revisão.',
+    fullDescription: 'Comece a aprender inglês do zero com um percurso visual e organizado. O Volume 1 apresenta o alfabeto e a pronúncia, números, cores, dias, meses e datas; pronomes pessoais e verbo to be; artigos, substantivos e adjetivos; apresentações, família, ocupações, rotina e horas; lugares, objetos, transportes e preposições. Para praticar, inclui frases úteis, perguntas e respostas, expressões, mini diálogos e revisão geral. O material também traz bônus com lista de verbos mais usados, vocabulário ilustrado, dicas de pronúncia e orientação para continuar os estudos.',
+    price: 19.99,
+    badge: 'VOLUME 1 + BÔNUS',
     categories: ['ingles', 'mapas-mentais'],
-    image: '/assets/images/product_ingles_mockup_1790962982763.jpg',
-    mapsCount: 65,
+    image: '/assets/images/ingles-mapa.png',
+    contentLabel: 'Inglês do zero · Volume 1 + bônus',
     format: 'PDF Digital',
-    pagesEstimated: 95,
-    rating: 4.8,
-    reviewsCount: 680,
+    rating: 0,
+    reviewsCount: 0,
     isFeatured: true,
     isBestSeller: false,
-    isComingSoon: true,
-    kiwifyCheckoutUrl: 'https://pay.kiwify.com.br/mappia-ingles-mapas',
+    kiwifyCheckoutUrl: 'https://pay.kiwify.com.br/uCZ3v3I',
     subjects: [
-      'Todos os Tempos Verbais (Simple, Continuous, Perfect)',
-      'Preposições de Lugar e Tempo (In, On, At sem erros)',
-      'Top 100 Phrasal Verbs com Exemplos em Frases',
-      'Guia Visual de Pronúncia e Falsos Cognatos',
-      'Vocabulário para Viagens e Negócios'
+      'Introdução ao inglês: por que aprender, alfabeto, pronúncia, números, cores, dias, meses e datas',
+      'Pronomes pessoais e verbo to be: formas afirmativa, negativa, interrogativa e contrações',
+      'Artigos a, an e the; substantivos singulares, plurais, contáveis e incontáveis; adjetivos e possessivos',
+      'Apresentações e rotina: falar sobre si, família, ocupações, profissões e horas',
+      'Lugares e objetos: em casa, na escola e no trabalho, na cidade, transportes e preposições de lugar',
+      'Frases práticas e revisão: expressões do dia a dia, perguntas e respostas, mini diálogos e revisão geral do Volume 1',
+      'Bônus: lista de verbos mais usados, vocabulário essencial ilustrado, dicas de pronúncia e como continuar os estudos'
     ],
     whatYouGet: [
-      '65 mapas mentais organizados por níveis (Básico ao Avançado)',
-      'Guia de consulta rápida em PDF A4 de alta definição',
-      'Árvores conceituais de vocabulário temático'
+      'Inglês do Zero em Mapas Mentais — Volume 1',
+      'Materiais bônus incluídos',
+      'Arquivo digital em PDF'
     ],
     targetAudience: [
-      'Quem está aprendendo inglês e se confunde com regras gramaticais',
-      'Estudantes que buscam memorizar vocabulário de forma rápida e visual'
+      'Pessoas que desejam começar a aprender inglês do zero',
+      'Estudantes que preferem aprender com materiais visuais'
     ]
   },
   {
@@ -454,42 +453,6 @@ export const PRODUCTS: Product[] = [
     isFeatured: true,
     isBestSeller: false,
     kiwifyCheckoutUrl: 'https://pay.kiwify.com.br/sX6Dcdt'
-  },
-  {
-    id: 'estudos-concursos-mapas-mentais',
-    slug: 'estudos-concursos-mapas-mentais',
-    title: 'ESTUDOS & CONCURSOS EM MAPAS MENTAIS',
-    shortDescription: 'Técnicas de estudo de alta performance, memorização acelerada, Direito Constitucional e Administrativo sintetizados.',
-    fullDescription: 'Criado especialmente para quem estuda para concursos públicos, faculdade ou certificações e precisa reter grandes volumes de conteúdo em pouco tempo. Inclui resumos estruturados dos temas mais recorrentes de Direito Constitucional, Administrativo, Língua Portuguesa e o método mnemônico Mappia de revisão ativa.',
-    price: 32.90,
-    originalPrice: 65.00,
-    badge: 'EM BREVE',
-    categories: ['estudos', 'mapas-mentais'],
-    image: '/assets/images/product_estudos_mockup_1790962993357.jpg',
-    mapsCount: 80,
-    format: 'PDF Digital',
-    pagesEstimated: 140,
-    rating: 4.9,
-    reviewsCount: 750,
-    isFeatured: true,
-    isBestSeller: false,
-    isComingSoon: true,
-    kiwifyCheckoutUrl: 'https://pay.kiwify.com.br/mappia-concursos-mapas',
-    subjects: [
-      'Direito Constitucional: Direitos Fundamentais e Organização do Estado',
-      'Direito Administrativo: Atos, Poderes e Licitações',
-      'Português para Concursos: Crase, Pontuação e Sintaxe',
-      'Metodologia de Revisão Espaçada e Ciclo de Estudos'
-    ],
-    whatYouGet: [
-      '80 mapas mentais em PDF de alta qualidade vetorial',
-      'Roteiro de revisão rápida para véspera de prova',
-      'Material 100% atualizado para os editais vigentes'
-    ],
-    targetAudience: [
-      'Concurseiros de carreiras administrativas, policiais e jurídicas',
-      'Universitários e profissionais que buscam memorização acelerada'
-    ]
   },
   {
     id: 'programacao-em-mapas-mentais',

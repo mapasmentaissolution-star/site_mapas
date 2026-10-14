@@ -40,14 +40,14 @@ import { FREE_ENEM_PDF_URL } from '../../data/products.data';
             </p>
 
             <!-- Action CTAs -->
-            <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 w-full sm:w-auto mb-4">
+            <div class="flex flex-col items-stretch gap-3.5 w-full mb-4">
               <!-- SUPER DESTAQUE: BAIXAR PDF ENEM GRÁTIS -->
               <a
                 [href]="freePdfUrl"
                 target="_blank"
                 rel="noopener noreferrer"
                 download="mapa-enem-gratis.pdf"
-                class="inline-flex items-center justify-center gap-2.5 px-6 py-4 bg-gradient-to-r from-[#F7C51E] via-amber-400 to-[#F7C51E] hover:from-amber-400 hover:to-amber-500 text-slate-950 font-display font-black text-sm rounded-xl transition-all shadow-xl hover:shadow-2xl hover:-translate-y-0.5 cursor-pointer whitespace-nowrap ring-4 ring-amber-400/25 group"
+                class="inline-flex w-full items-center justify-center gap-2.5 px-4 sm:px-6 py-4 bg-gradient-to-r from-[#F7C51E] via-amber-400 to-[#F7C51E] hover:from-amber-400 hover:to-amber-500 text-slate-950 font-display font-black text-sm text-center rounded-xl transition-all shadow-xl hover:shadow-2xl hover:-translate-y-0.5 cursor-pointer ring-4 ring-amber-400/25 group"
               >
                 <mat-icon class="!text-xl text-[#082B5C] group-hover:rotate-12 transition-transform">card_giftcard</mat-icon>
                 <span>BAIXAR 5 MAPAS ENEM GRÁTIS</span>
@@ -56,7 +56,7 @@ import { FREE_ENEM_PDF_URL } from '../../data/products.data';
 
               <a
                 routerLink="/enem-2026"
-                class="inline-flex items-center justify-center gap-2 px-6 py-4 bg-[#082B5C] hover:bg-[#0D4F91] text-white font-display font-bold text-sm rounded-xl transition-all shadow-md hover:shadow-lg hover:-translate-y-0.5 cursor-pointer whitespace-nowrap"
+                class="inline-flex w-full items-center justify-center gap-2 px-4 sm:px-6 py-4 bg-[#082B5C] hover:bg-[#0D4F91] text-white font-display font-bold text-sm text-center rounded-xl transition-all shadow-md hover:shadow-lg hover:-translate-y-0.5 cursor-pointer"
               >
                 <span>COMBO 150 MAPAS ENEM</span>
                 <mat-icon class="!text-lg text-[#F7C51E]">bolt</mat-icon>

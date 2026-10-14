@@ -240,7 +240,6 @@ import { WHATSAPP_URL, WHATSAPP_PHONE_FORMATTED, FREE_ENEM_PDF_URL } from '../..
             class="hover:text-[#082B5C] transition-colors flex items-center gap-1"
           >
             <span>Inglês</span>
-            <span class="text-[9px] bg-amber-100 text-amber-900 px-1.5 py-0.2 rounded font-bold uppercase tracking-wider">Em breve</span>
           </a>
 
           <a
@@ -342,10 +341,7 @@ import { WHATSAPP_URL, WHATSAPP_PHONE_FORMATTED, FREE_ENEM_PDF_URL } from '../..
               (click)="closeMobileMenu()"
               class="px-3 py-2 rounded-lg hover:bg-slate-100 transition-colors flex items-center justify-between"
             >
-              <div class="flex items-center gap-2">
-                <span>Inglês</span>
-                <span class="text-[9px] bg-amber-100 text-amber-900 px-1.5 py-0.2 rounded font-bold uppercase tracking-wider">Em breve</span>
-              </div>
+              <span>Inglês</span>
               <mat-icon class="!text-sm text-slate-400">chevron_right</mat-icon>
             </a>
 
