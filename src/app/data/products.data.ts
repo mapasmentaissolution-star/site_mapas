@@ -455,6 +455,40 @@ export const PRODUCTS: Product[] = [
     kiwifyCheckoutUrl: 'https://pay.kiwify.com.br/sX6Dcdt'
   },
   {
+    id: 'portugues-para-concursos-40-mapas-mentais',
+    slug: 'portugues-para-concursos-40-mapas-mentais',
+    title: 'PORTUGUÊS PARA CONCURSOS — 40 MAPAS MENTAIS',
+    shortDescription: '40 mapas mentais de interpretação de textos, gramática, sintaxe, concordância, pontuação e revisão para concursos.',
+    fullDescription: 'Estude Português para concursos com 40 mapas mentais organizados para facilitar a compreensão, a revisão e a memorização. O conteúdo abrange interpretação de textos; gramática e classes de palavras; sintaxe e concordância; pontuação e estrutura textual; além de semântica, conectivos, pegadinhas de concursos e revisão geral.',
+    price: 19.99,
+    badge: '40 MAPAS MENTAIS',
+    categories: ['estudos', 'mapas-mentais'],
+    image: '/assets/images/portugues-concursos.png',
+    contentLabel: 'Português para Concursos · 40 mapas mentais',
+    mapsCount: 40,
+    format: 'PDF Digital',
+    rating: 0,
+    reviewsCount: 0,
+    whatYouGet: [
+      '40 mapas mentais de Português organizados em cinco áreas de estudo',
+      'Conteúdo visual para estudar, revisar e memorizar os principais tópicos de Português para concursos'
+    ],
+    subjects: [
+      'Interpretação de textos: compreensão, tema, tese, ideia central, informações explícitas e implícitas, inferência, pressupostos, tipologia, gêneros textuais, coesão, coerência, sentido das palavras no contexto e figuras de linguagem',
+      'Gramática e classes de palavras: fonética, fonologia, encontros vocálicos, ortografia oficial, acentuação gráfica, formação e estrutura das palavras, substantivos, adjetivos, artigos, numerais, interjeições, pronomes, verbos, advérbios, preposições e conjunções',
+      'Sintaxe e concordância: termos essenciais, integrantes e acessórios da oração, período simples e composto, orações coordenadas e subordinadas, concordância nominal e verbal, regência nominal e verbal',
+      'Pontuação e estrutura textual: crase, vírgula, dois-pontos, ponto e vírgula, outros sinais, colocação pronominal, discurso direto, indireto e indireto livre, paralelismo e estrutura das frases',
+      'Revisão e questões de concursos: semântica, sinonímia, antonímia, polissemia, ambiguidade, vícios de linguagem, reescrita, equivalência de sentido, conectivos, relações lógico-semânticas, pegadinhas de Português em concursos e revisão geral'
+    ],
+    targetAudience: [
+      'Candidatos que estudam Português para concursos públicos',
+      'Estudantes que querem revisar gramática e interpretação de textos com mapas mentais'
+    ],
+    isFeatured: true,
+    isBestSeller: false,
+    kiwifyCheckoutUrl: 'https://pay.kiwify.com.br/7vu4sBc'
+  },
+  {
     id: 'programacao-em-mapas-mentais',
     slug: 'programacao-em-mapas-mentais',
     title: 'PROGRAMAÇÃO EM MAPAS MENTAIS',
