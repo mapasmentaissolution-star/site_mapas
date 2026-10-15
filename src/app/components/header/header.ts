@@ -4,7 +4,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { CatalogData } from '../../services/catalog-data';
 import { KiwifyCheckout } from '../../services/kiwify-checkout';
 import { Product } from '../../models/product.model';
-import { WHATSAPP_URL, WHATSAPP_PHONE_FORMATTED, FREE_ENEM_PDF_URL } from '../../data/products.data';
+import { WHATSAPP_URL, FREE_ENEM_PDF_URL } from '../../data/products.data';
 
 @Component({
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -38,13 +38,8 @@ import { WHATSAPP_URL, WHATSAPP_PHONE_FORMATTED, FREE_ENEM_PDF_URL } from '../..
             class="flex items-center gap-1 text-[#25D366] hover:text-emerald-300 font-bold transition-colors"
           >
             <mat-icon class="!text-sm !w-4 !h-4">chat</mat-icon>
-            <span>WhatsApp: {{ whatsappPhone }}</span>
+            <span>Fale conosco pelo WhatsApp</span>
           </a>
-          <span>·</span>
-          <span class="flex items-center gap-1">
-            <mat-icon class="!text-sm !w-4 !h-4 text-[#F7C51E]">verified</mat-icon>
-            Garantia de 7 dias
-          </span>
           <span>·</span>
           <span class="flex items-center gap-1">
             <mat-icon class="!text-sm !w-4 !h-4 text-emerald-400">lock</mat-icon>
@@ -137,7 +132,7 @@ import { WHATSAPP_URL, WHATSAPP_PHONE_FORMATTED, FREE_ENEM_PDF_URL } from '../..
               target="_blank"
               rel="noopener noreferrer"
               class="hidden sm:inline-flex items-center gap-1.5 px-3 py-2 bg-[#25D366] hover:bg-[#1EBE5D] text-slate-950 font-display font-black text-xs rounded-xl shadow-xs transition-all hover:scale-102 cursor-pointer whitespace-nowrap"
-              [title]="'Fale conosco no WhatsApp: ' + whatsappPhone"
+              title="Fale conosco no WhatsApp"
             >
               <svg class="w-4 h-4 fill-current shrink-0" viewBox="0 0 24 24">
                 <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.698.077-2.022-.472-1.688-.7-2.775-2.42-2.859-2.533-.084-.113-.683-.907-.683-1.731 0-.824.432-1.229.586-1.398.154-.17.336-.212.449-.212.112 0 .225.001.323.006.103.005.241-.039.377.29.144.35.488 1.19.531 1.277.043.088.072.19.014.305-.058.115-.088.187-.174.288-.087.101-.183.226-.261.304-.087.087-.178.182-.077.355.101.174.45 1.741 1.543 2.128.324.115.597.184.802.249.325.103.621.089.855.054.261-.039.805-.329.919-.646.114-.317.114-.588.08-.646-.034-.058-.124-.093-.268-.164z"/>
@@ -370,7 +365,7 @@ import { WHATSAPP_URL, WHATSAPP_PHONE_FORMATTED, FREE_ENEM_PDF_URL } from '../..
                 <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.698.077-2.022-.472-1.688-.7-2.775-2.42-2.859-2.533-.084-.113-.683-.907-.683-1.731 0-.824.432-1.229.586-1.398.154-.17.336-.212.449-.212.112 0 .225.001.323.006.103.005.241-.039.377.29.144.35.488 1.19.531 1.277.043.088.072.19.014.305-.058.115-.088.187-.174.288-.087.101-.183.226-.261.304-.087.087-.178.182-.077.355.101.174.45 1.741 1.543 2.128.324.115.597.184.802.249.325.103.621.089.855.054.261-.039.805-.329.919-.646.114-.317.114-.588.08-.646-.034-.058-.124-.093-.268-.164z"/>
                 <path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2.05 22l4.982-1.307A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.167c-1.614 0-3.12-.442-4.417-1.211l-.317-.188-2.969.779.792-2.894-.207-.329A8.132 8.132 0 013.833 12c0-4.503 3.664-8.167 8.167-8.167 4.503 0 8.167 3.664 8.167 8.167 0 4.503-3.664 8.167-8.167 8.167z"/>
               </svg>
-              <span>Dúvidas? Fale no WhatsApp: {{ whatsappPhone }}</span>
+              <span>Dúvidas? Fale conosco pelo WhatsApp</span>
             </a>
 
             <a
@@ -476,7 +471,6 @@ export class Header {
 
   readonly comboKiwifyUrl = 'https://pay.kiwify.com.br/nsHOTy9';
   readonly whatsappUrl = WHATSAPP_URL;
-  readonly whatsappPhone = WHATSAPP_PHONE_FORMATTED;
   readonly freePdfUrl = FREE_ENEM_PDF_URL;
 
   onSearchInput(event: Event): void {

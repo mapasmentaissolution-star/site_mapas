@@ -1,8 +1,6 @@
 import { Product, CategoryInfo, Testimonial, FaqItem } from '../models/product.model';
 
 export const FREE_ENEM_PDF_URL = '/assets/mapa-enem-gratis.pdf';
-export const WHATSAPP_PHONE = '11987973086';
-export const WHATSAPP_PHONE_FORMATTED = '(11) 98797-3086';
 export const WHATSAPP_URL = 'https://wa.me/5511987973086?text=Ol%C3%A1%2C%20gostaria%20de%20tirar%20d%C3%BAvidas%20sobre%20os%20mapas%20mentais%20da%20Mappia!';
 
 export const CATEGORIES: CategoryInfo[] = [

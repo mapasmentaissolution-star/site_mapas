@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { MatIconModule } from '@angular/material/icon';
-import { WHATSAPP_URL, WHATSAPP_PHONE_FORMATTED, FREE_ENEM_PDF_URL } from '../../data/products.data';
+import { WHATSAPP_URL, FREE_ENEM_PDF_URL } from '../../data/products.data';
 
 @Component({
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -34,10 +34,6 @@ import { WHATSAPP_URL, WHATSAPP_PHONE_FORMATTED, FREE_ENEM_PDF_URL } from '../..
               <div class="flex items-center gap-1.5 bg-white/5 border border-white/10 px-2.5 py-1.5 rounded-lg">
                 <mat-icon class="!text-sm !w-4 !h-4 text-emerald-400">lock</mat-icon>
                 <span class="text-[11px]">Pagamento 100% Seguro</span>
-              </div>
-              <div class="flex items-center gap-1.5 bg-white/5 border border-white/10 px-2.5 py-1.5 rounded-lg">
-                <mat-icon class="!text-sm !w-4 !h-4 text-[#F7C51E]">verified</mat-icon>
-                <span class="text-[11px]">Garantia de 7 Dias</span>
               </div>
             </div>
           </div>
@@ -115,7 +111,7 @@ import { WHATSAPP_URL, WHATSAPP_PHONE_FORMATTED, FREE_ENEM_PDF_URL } from '../..
                   class="inline-flex items-center gap-2 px-3 py-2 bg-[#25D366] hover:bg-[#1EBE5D] text-slate-950 rounded-xl font-extrabold text-xs transition-all shadow-sm my-1"
                 >
                   <mat-icon class="!text-base !w-4 !h-4">chat</mat-icon>
-                  <span>WhatsApp: {{ whatsappPhone }}</span>
+                  <span>Fale conosco pelo WhatsApp</span>
                 </a>
               </li>
               <li>
@@ -186,6 +182,5 @@ import { WHATSAPP_URL, WHATSAPP_PHONE_FORMATTED, FREE_ENEM_PDF_URL } from '../..
 })
 export class Footer {
   readonly whatsappUrl = WHATSAPP_URL;
-  readonly whatsappPhone = WHATSAPP_PHONE_FORMATTED;
   readonly freePdfUrl = FREE_ENEM_PDF_URL;
 }

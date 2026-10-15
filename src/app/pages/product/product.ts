@@ -5,7 +5,7 @@ import { DecimalPipe } from '@angular/common';
 import { MatIconModule } from '@angular/material/icon';
 import { CatalogData } from '../../services/catalog-data';
 import { ProductCard } from '../../components/product-card/product-card';
-import { WHATSAPP_URL, WHATSAPP_PHONE_FORMATTED } from '../../data/products.data';
+import { WHATSAPP_URL } from '../../data/products.data';
 
 @Component({
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -179,7 +179,7 @@ import { WHATSAPP_URL, WHATSAPP_PHONE_FORMATTED } from '../../data/products.data
                   }
                 </div>
 
-                <!-- Guarantee & Safety ticks -->
+                <!-- Purchase safety details -->
                 <div class="grid grid-cols-2 gap-2.5 text-xs text-slate-600 pt-4 border-t border-slate-100">
                   <div class="flex items-center gap-1.5">
                     <mat-icon class="!text-base !w-4 !h-4 text-emerald-600">check_circle</mat-icon>
@@ -206,10 +206,10 @@ import { WHATSAPP_URL, WHATSAPP_PHONE_FORMATTED } from '../../data/products.data
                     target="_blank"
                     rel="noopener noreferrer"
                     class="w-full py-3 px-4 bg-emerald-50 hover:bg-emerald-100/80 border border-emerald-300 text-emerald-950 font-bold text-xs rounded-xl transition-all flex items-center justify-center gap-2 cursor-pointer shadow-xs"
-                    [title]="'Fale conosco no WhatsApp ' + whatsappPhone"
+                    title="Fale conosco no WhatsApp"
                   >
                     <mat-icon class="!text-lg text-emerald-600">chat</mat-icon>
-                    <span>Dúvidas sobre o material? Fale no WhatsApp ({{ whatsappPhone }})</span>
+                    <span>Dúvidas sobre o material? Fale conosco pelo WhatsApp</span>
                   </a>
                 </div>
               </div>
@@ -320,16 +320,6 @@ import { WHATSAPP_URL, WHATSAPP_PHONE_FORMATTED } from '../../data/products.data
                 </ol>
               </div>
 
-              <!-- Satisfaction Guarantee Box -->
-              <div class="bg-[#EAF3FC] rounded-3xl p-6 border border-[#0D4F91]/20 text-[#082B5C]">
-                <div class="w-10 h-10 rounded-xl bg-white flex items-center justify-center text-[#0D4F91] mb-3 shadow-xs">
-                  <mat-icon class="!text-2xl">verified_user</mat-icon>
-                </div>
-                <h4 class="font-display font-bold text-base mb-1">Garantia de 7 Dias</h4>
-                <p class="text-xs text-slate-600 leading-relaxed">
-                  Se você não ficar satisfeito com a qualidade dos mapas mentais, devolvemos 100% do seu dinheiro sem burocracia.
-                </p>
-              </div>
             </div>
           </div>
 
@@ -397,5 +387,4 @@ export class ProductPage {
   });
 
   readonly whatsappUrl = WHATSAPP_URL;
-  readonly whatsappPhone = WHATSAPP_PHONE_FORMATTED;
 }

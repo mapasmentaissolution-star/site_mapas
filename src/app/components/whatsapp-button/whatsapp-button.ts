@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
-import { WHATSAPP_URL, WHATSAPP_PHONE_FORMATTED } from '../../data/products.data';
+import { WHATSAPP_URL } from '../../data/products.data';
 
 @Component({
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -32,7 +32,7 @@ import { WHATSAPP_URL, WHATSAPP_PHONE_FORMATTED } from '../../data/products.data
         target="_blank"
         rel="noopener noreferrer"
         class="group relative flex items-center justify-center w-14 h-14 bg-[#25D366] hover:bg-[#1EBE5D] text-white rounded-full shadow-2xl transition-all duration-300 hover:scale-110 active:scale-95 cursor-pointer focus:outline-hidden focus:ring-4 focus:ring-emerald-400/40"
-        [attr.aria-label]="'Fale conosco no WhatsApp ' + phoneFormatted"
+        aria-label="Fale conosco no WhatsApp"
       >
         <!-- Pulse effect rings -->
         <span class="absolute inset-0 rounded-full bg-[#25D366] opacity-70 animate-ping pointer-events-none"></span>
@@ -55,7 +55,6 @@ import { WHATSAPP_URL, WHATSAPP_PHONE_FORMATTED } from '../../data/products.data
 })
 export class WhatsappButton {
   readonly whatsappUrl = WHATSAPP_URL;
-  readonly phoneFormatted = WHATSAPP_PHONE_FORMATTED;
   readonly showTooltip = signal<boolean>(true);
 
   dismissTooltip(event: Event): void {
