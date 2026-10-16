@@ -487,6 +487,41 @@ export const PRODUCTS: Product[] = [
     kiwifyCheckoutUrl: 'https://pay.kiwify.com.br/7vu4sBc'
   },
   {
+    id: 'matematica-para-concursos-40-mapas-mentais',
+    slug: 'matematica-para-concursos-40-mapas-mentais',
+    title: 'MATEMÁTICA PARA CONCURSOS EM MAPAS MENTAIS + SIMULADO E BÔNUS',
+    shortDescription: '40 mapas mentais de Matemática para concursos, com simulado e bônus: da matemática básica à geometria, estatística e probabilidade.',
+    fullDescription: 'Prepare-se para concursos com 40 mapas mentais de Matemática organizados para facilitar a compreensão, a revisão e a memorização. O conteúdo percorre matemática básica; razão, proporção e porcentagem; álgebra, equações e funções; matemática financeira e estatística; geometria, contagem e probabilidade. O material inclui também simulado e bônus para complementar seus estudos.',
+    price: 19.99,
+    badge: '40 MAPAS + SIMULADO + BÔNUS',
+    categories: ['estudos', 'mapas-mentais'],
+    image: '/assets/images/matematica-concursos.png',
+    contentLabel: 'Matemática para Concursos · 40 mapas mentais',
+    mapsCount: 40,
+    format: 'PDF + Simulado + Bônus',
+    rating: 0,
+    reviewsCount: 0,
+    whatYouGet: [
+      '40 mapas mentais de Matemática organizados em cinco áreas de estudo',
+      'Simulado para praticar os conteúdos estudados',
+      'Bônus para complementar a preparação para concursos'
+    ],
+    subjects: [
+      'Matemática básica: conjuntos numéricos; operações com frações e números decimais; múltiplos e divisores; MMC e MDC; potenciação e radiciação; expressões numéricas; critérios de divisibilidade; razão, proporção e regra de três simples',
+      'Razão, proporção e porcentagem: regra de três composta; grandezas diretamente e inversamente proporcionais; conceitos e cálculos de porcentagem; aumentos e descontos percentuais; variação percentual; divisão proporcional; escalas e conversão de unidades; problemas de proporcionalidade',
+      'Álgebra, equações e funções: expressões algébricas e produtos notáveis; fatoração algébrica; equações do primeiro grau; sistemas de equações do primeiro grau; equações do segundo grau; inequações; conceitos e gráficos de funções; sequências e progressões aritméticas e geométricas',
+      'Matemática financeira e estatística: razões, taxas e índices; juros simples e compostos; descontos e acréscimos financeiros; médias aritmética, ponderada, mediana e moda; leitura e interpretação de gráficos e tabelas; medidas de dispersão; análise de dados e estatística básica',
+      'Geometria, contagem, probabilidade e revisão: ângulos e polígonos; perímetro e área de figuras planas; sólidos e volumes; Teorema de Pitágoras e semelhança de triângulos; unidades de medida e conversões; princípios de contagem e análise combinatória; probabilidade; revisão geral de fórmulas essenciais de Matemática'
+    ],
+    targetAudience: [
+      'Candidatos que estudam Matemática para concursos públicos',
+      'Estudantes que querem revisar fórmulas e conceitos com mapas mentais'
+    ],
+    isFeatured: true,
+    isBestSeller: false,
+    kiwifyCheckoutUrl: 'https://pay.kiwify.com.br/HJ1kUsQ'
+  },
+  {
     id: 'logica-programacao-mapas-mentais-edicao-2026-2027',
     slug: 'logica-programacao-mapas-mentais-edicao-2026-2027',
     title: 'LÓGICA DE PROGRAMAÇÃO EM MAPAS MENTAIS EDIÇÃO 2026/2027',
