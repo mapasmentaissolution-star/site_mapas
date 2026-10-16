@@ -487,43 +487,6 @@ export const PRODUCTS: Product[] = [
     kiwifyCheckoutUrl: 'https://pay.kiwify.com.br/7vu4sBc'
   },
   {
-    id: 'programacao-em-mapas-mentais',
-    slug: 'programacao-em-mapas-mentais',
-    title: 'PROGRAMAÇÃO EM MAPAS MENTAIS',
-    shortDescription: 'Conceitos de programação, lógica, algoritmos, estruturas de dados, JavaScript e Python em esquemas visuais fáceis de entender.',
-    fullDescription: 'Aprender a programar pode ser muito mais visual e intuitivo. Este guia reúne mapas mentais que explicam com clareza desde lógica de programação, variáveis, loops e condicionais, até estruturas de dados (pilhas, filas, árvores, grafos), orientação a objetos, arquitetura de software e as linguagens Python e JavaScript.',
-    price: 34.90,
-    originalPrice: 69.90,
-    badge: 'EM BREVE',
-    categories: ['programacao', 'mapas-mentais'],
-    image: '/assets/images/product_dev_mockup_1790963003528.jpg',
-    mapsCount: 70,
-    format: 'PDF Digital',
-    pagesEstimated: 110,
-    rating: 4.9,
-    reviewsCount: 520,
-    isFeatured: true,
-    isBestSeller: false,
-    isComingSoon: true,
-    kiwifyCheckoutUrl: 'https://pay.kiwify.com.br/mappia-programacao-mapas',
-    subjects: [
-      'Lógica de Programação e Fluxogramas Visuais',
-      'Estruturas de Dados e Algoritmos Essenciais',
-      'Programação Orientada a Objetos (POO) Descomplicada',
-      'Cheat-Sheets Visuais de Python e JavaScript',
-      'Git, GitHub e Fluxo de Trabalho de Desenvolvimento'
-    ],
-    whatYouGet: [
-      '70 mapas mentais de ciência da computação e desenvolvimento',
-      'PDF em alta resolução para consultar no monitor enquanto programa',
-      'Diagramas explicativos de sintaxe e resolução de bugs'
-    ],
-    targetAudience: [
-      'Iniciantes e estudantes de tecnologia e desenvolvimento de software',
-      'Programadores que buscam fixar conceitos fundamentais e arquitetura'
-    ]
-  },
-  {
     id: 'logica-programacao-mapas-mentais-edicao-2026-2027',
     slug: 'logica-programacao-mapas-mentais-edicao-2026-2027',
     title: 'LÓGICA DE PROGRAMAÇÃO EM MAPAS MENTAIS EDIÇÃO 2026/2027',
