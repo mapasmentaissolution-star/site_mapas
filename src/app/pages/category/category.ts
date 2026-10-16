@@ -39,19 +39,6 @@ import { FREE_ENEM_PDF_URL } from '../../data/products.data';
           </div>
         </div>
 
-        <!-- Aviso de "Em Breve" para categorias em desenvolvimento -->
-        @if (currentSlug() === 'programacao') {
-          <div class="mb-8 p-5 rounded-2xl bg-amber-50 border border-amber-200/90 text-amber-950 flex items-start sm:items-center gap-3.5 shadow-xs">
-            <div class="w-10 h-10 rounded-xl bg-amber-200/80 text-amber-900 flex items-center justify-center shrink-0 font-bold">
-              <mat-icon class="!text-xl">hourglass_top</mat-icon>
-            </div>
-            <div class="flex-1 text-xs sm:text-sm leading-relaxed">
-              <strong class="font-bold block text-amber-900 mb-0.5">Área em desenvolvimento • Lançamento em breve</strong>
-              <span>Ainda não temos mapas mentais disponíveis nesta área. Nossa equipe está preparando esquemas visuais completos com lançamento previsto em breve!</span>
-            </div>
-          </div>
-        }
-
         <!-- Destaque Especial: Brinde Gratuito 5 Mapas ENEM 2026 -->
         @if (currentSlug() === 'enem-2026') {
           <div class="mb-8 p-6 rounded-3xl bg-gradient-to-r from-[#082B5C] via-[#0D4F91] to-[#082B5C] text-white border-2 border-[#F7C51E] shadow-xl flex flex-col md:flex-row items-center justify-between gap-6">

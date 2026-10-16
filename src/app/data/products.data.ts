@@ -59,10 +59,10 @@ export const CATEGORIES: CategoryInfo[] = [
     slug: 'programacao',
     title: 'Programação',
     shortTitle: 'Programação',
-    description: 'Conceitos de programação, algoritmos, lógica, Python e estruturas de dados de forma visual.',
+    description: 'Aprenda lógica de programação com 20 mapas mentais que organizam os fundamentos, os dados e operadores, as estruturas de decisão, a organização de código e a prática de resolução de problemas.',
     icon: 'terminal',
     color: '#0D4F91',
-    badgeText: 'Em Breve'
+    badgeText: '20 mapas mentais disponíveis'
   }
 ];
 
@@ -522,6 +522,55 @@ export const PRODUCTS: Product[] = [
       'Iniciantes e estudantes de tecnologia e desenvolvimento de software',
       'Programadores que buscam fixar conceitos fundamentais e arquitetura'
     ]
+  },
+  {
+    id: 'logica-programacao-mapas-mentais-edicao-2026-2027',
+    slug: 'logica-programacao-mapas-mentais-edicao-2026-2027',
+    title: 'LÓGICA DE PROGRAMAÇÃO EM MAPAS MENTAIS EDIÇÃO 2026/2027',
+    shortDescription: '20 mapas mentais para construir sua base em programação: fundamentos, dados e operadores, decisões, estruturas, organização e resolução de problemas.',
+    fullDescription: 'Construa sua base em programação com 20 mapas mentais visuais, organizados para facilitar o aprendizado e a revisão. A edição 2026/2027 aborda os fundamentos da programação e da resolução de problemas; variáveis, constantes, tipos de dados e operadores; estruturas condicionais e de repetição; vetores, listas, matrizes e funções; e, por fim, erros, depuração, testes e raciocínio algorítmico aplicado a um projeto completo.',
+    price: 14.99,
+    badge: 'EDIÇÃO 2026/2027',
+    categories: ['programacao', 'mapas-mentais'],
+    image: '/assets/images/logica-programacao.png',
+    contentLabel: 'Lógica de Programação · 20 mapas mentais',
+    mapsCount: 20,
+    format: 'PDF Digital',
+    rating: 0,
+    reviewsCount: 0,
+    whatYouGet: [
+      '20 mapas mentais para construir sua base em programação',
+      'Conteúdo organizado em cinco áreas: fundamentos; dados e operadores; decisões e repetições; estruturas e organização; prática e resolução de problemas'
+    ],
+    subjects: [
+      'Fundamentos: O que é programação?',
+      'Fundamentos: Lógica de programação e resolução de problemas',
+      'Fundamentos: Algoritmos, pseudocódigo e fluxogramas',
+      'Fundamentos: Entrada, processamento e saída',
+      'Dados e operadores: Variáveis e constantes',
+      'Dados e operadores: Tipos de dados e conversões',
+      'Dados e operadores: Operadores aritméticos e expressões',
+      'Dados e operadores: Operadores relacionais e lógicos',
+      'Decisões e repetições: Estruturas condicionais — SE, SENÃO',
+      'Decisões e repetições: Condições compostas e aninhadas',
+      'Decisões e repetições: Estruturas de repetição — PARA',
+      'Decisões e repetições: Estruturas de repetição — ENQUANTO e REPITA',
+      'Decisões e repetições: Contadores e acumuladores',
+      'Estruturas e organização: Vetores e listas',
+      'Estruturas e organização: Matrizes e dados bidimensionais',
+      'Estruturas e organização: Funções, parâmetros e retorno',
+      'Estruturas e organização: Modularização e reutilização',
+      'Prática e resolução de problemas: Erros, depuração e testes',
+      'Prática e resolução de problemas: Raciocínio algorítmico — do problema à solução',
+      'Prática e resolução de problemas: Projeto prático — algoritmo completo'
+    ],
+    targetAudience: [
+      'Iniciantes que querem aprender lógica de programação desde os fundamentos',
+      'Estudantes que desejam revisar algoritmos e resolução de problemas de forma visual'
+    ],
+    isFeatured: true,
+    isBestSeller: false,
+    kiwifyCheckoutUrl: 'https://pay.kiwify.com.br/uammIt6'
   }
 ];
 

@@ -243,7 +243,6 @@ import { WHATSAPP_URL, FREE_ENEM_PDF_URL } from '../../data/products.data';
             class="hover:text-[#082B5C] transition-colors flex items-center gap-1"
           >
             <span>Programação</span>
-            <span class="text-[9px] bg-amber-100 text-amber-900 px-1.5 py-0.2 rounded font-bold uppercase tracking-wider">Em breve</span>
           </a>
         </nav>
       </div>
@@ -347,7 +346,6 @@ import { WHATSAPP_URL, FREE_ENEM_PDF_URL } from '../../data/products.data';
             >
               <div class="flex items-center gap-2">
                 <span>Programação</span>
-                <span class="text-[9px] bg-amber-100 text-amber-900 px-1.5 py-0.2 rounded font-bold uppercase tracking-wider">Em breve</span>
               </div>
               <mat-icon class="!text-sm text-slate-400">chevron_right</mat-icon>
             </a>
