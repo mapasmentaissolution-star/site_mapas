@@ -569,6 +569,47 @@ export const PRODUCTS: Product[] = [
     isFeatured: true,
     isBestSeller: false,
     kiwifyCheckoutUrl: 'https://pay.kiwify.com.br/uammIt6'
+  },
+  {
+    id: 'sql-em-mapas-mentais-basico-consultas-avancadas',
+    slug: 'sql-em-mapas-mentais-basico-consultas-avancadas',
+    title: 'SQL EM MAPAS MENTAIS — Do Básico às Consultas Avançadas + 8 Bônus',
+    shortDescription: 'Aprenda SQL de forma visual: fundamentos, consultas, filtros, agrupamentos, junções e recursos avançados, com 8 bônus complementares.',
+    fullDescription: 'Aprenda e revise SQL com mapas mentais que organizam os conceitos desde os primeiros comandos até consultas avançadas. Estude a estrutura de bancos de dados relacionais, criação e manipulação de tabelas, consultas com SELECT, filtros e ordenação, funções de agregação, agrupamentos, junções entre tabelas e recursos avançados como subconsultas e expressões comuns de tabela (CTEs). O material acompanha 8 bônus para complementar seus estudos.',
+    price: 19.99,
+    badge: '8 BÔNUS',
+    categories: ['programacao', 'mapas-mentais'],
+    image: '/assets/images/sql-mapas.png',
+    contentLabel: 'SQL em Mapas Mentais + 8 bônus',
+    format: 'PDF Digital + 8 Bônus',
+    rating: 0,
+    reviewsCount: 0,
+    whatYouGet: [
+      'Mapas mentais de SQL, do básico às consultas avançadas',
+      '8 bônus complementares para apoiar o aprendizado e a revisão'
+    ],
+    subjects: [
+      'Fundamentos de bancos de dados relacionais e conceitos de SQL',
+      'Criação e definição de estruturas: bancos, tabelas e tipos de dados',
+      'Manipulação de dados: inserção, atualização e exclusão de registros',
+      'Consultas com SELECT, aliases, DISTINCT e expressões',
+      'Filtros com WHERE, operadores, padrões e tratamento de valores nulos',
+      'Ordenação e limitação de resultados',
+      'Funções de texto, números, datas e valores nulos',
+      'Funções de agregação e agrupamentos com GROUP BY e HAVING',
+      'Junções entre tabelas: INNER, LEFT, RIGHT e FULL JOIN',
+      'Subconsultas e consultas aninhadas',
+      'Expressões comuns de tabela (CTEs)',
+      'Operações de conjunto e combinação de resultados',
+      'Consultas avançadas e boas práticas de organização e leitura'
+    ],
+    targetAudience: [
+      'Iniciantes que querem aprender SQL e consultar bancos de dados relacionais',
+      'Estudantes e profissionais que desejam revisar consultas SQL, de fundamentos a recursos avançados'
+    ],
+    isFeatured: true,
+    isBestSeller: false,
+    kiwifyCheckoutUrl: 'https://pay.kiwify.com.br/4Do7kFQ'
   }
 ];
 
