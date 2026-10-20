@@ -311,6 +311,39 @@ export const PRODUCTS: Product[] = [
     kiwifyCheckoutUrl: 'https://pay.kiwify.com.br/56GNF6M'
   },
   {
+    id: 'desvendando-misterios-biblia-criacao-mundo',
+    slug: 'desvendando-misterios-biblia-criacao-mundo',
+    title: 'DESVENDANDO OS MISTÉRIOS DA BÍBLIA — A CRIAÇÃO DO MUNDO',
+    shortDescription: '19 mapas mentais e estudos bíblicos sobre a criação do mundo, com aprofundamento teológico, revisão e aplicação.',
+    fullDescription: 'Aprofunde seu estudo de Gênesis 1–2 com um guia visual sobre a criação do mundo. São 19 mapas mentais organizados em três partes: estudos bíblicos sobre a criação e seus principais temas; comentários e aprofundamento teológico, incluindo palavras-chave do hebraico bíblico, referências cruzadas e interpretações; e revisão, perguntas para reflexão e aplicações espirituais para a vida cristã.',
+    price: 9.99,
+    badge: '19 MAPAS MENTAIS',
+    categories: ['biblicos', 'mapas-mentais'],
+    image: '/assets/images/criacao-mapas.png',
+    contentLabel: 'Desvendando os Mistérios da Bíblia · A Criação do Mundo',
+    mapsCount: 19,
+    format: 'PDF Digital',
+    rating: 0,
+    reviewsCount: 0,
+    whatYouGet: [
+      '19 mapas mentais e estudos bíblicos sobre a criação do mundo',
+      'Comentários, referências cruzadas e aprofundamento teológico de Gênesis 1:1–5',
+      'Perguntas para reflexão, revisão bíblica e aplicações espirituais'
+    ],
+    subjects: [
+      'Mapas mentais e estudos bíblicos: a criação do mundo; no princípio, Deus — Gênesis 1:1–5; os primeiros três dias da criação; a vida enche a criação — dias 4, 5 e 6; o sétimo dia e o descanso de Deus; a criação do ser humano; o significado de ser criado à imagem de Deus; o Jardim do Éden; interpretações cristãs dos dias da criação; criação e ciência; propósito da criação; a criação de Gênesis ao Apocalipse',
+      'Comentários e aprofundamento teológico: comentário bíblico de Gênesis 1:1–5; palavras-chave do hebraico bíblico; referências cruzadas e conexões bíblicas; principais interpretações teológicas',
+      'Revisão e aplicação: revisão bíblica sobre a criação do mundo; perguntas para reflexão e estudo; aplicações espirituais para a vida cristã'
+    ],
+    targetAudience: [
+      'Pessoas que desejam estudar a narrativa bíblica da criação em Gênesis',
+      'Cristãos, estudantes e grupos de estudo bíblico que buscam aprofundamento visual e organizado'
+    ],
+    isFeatured: true,
+    isBestSeller: false,
+    kiwifyCheckoutUrl: 'https://pay.kiwify.com.br/KCRQfHY'
+  },
+  {
     id: 'ingles-em-mapas-mentais',
     slug: 'ingles-em-mapas-mentais',
     title: 'INGLÊS DO ZERO EM MAPAS MENTAIS — VOLUME 1 + BÔNUS | MAPPIA ESTUDOS',
