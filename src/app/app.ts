@@ -1,8 +1,9 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { Header } from './components/header/header';
 import { Footer } from './components/footer/footer';
 import { WhatsappButton } from './components/whatsapp-button/whatsapp-button';
+import { SeoMetadata } from './services/seo-metadata';
 
 @Component({
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -11,5 +12,8 @@ import { WhatsappButton } from './components/whatsapp-button/whatsapp-button';
   templateUrl: './app.html',
   styleUrl: './app.css',
 })
-export class App {}
-
+export class App {
+  constructor() {
+    inject(SeoMetadata);
+  }
+}
