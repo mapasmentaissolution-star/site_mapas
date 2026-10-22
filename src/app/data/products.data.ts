@@ -380,6 +380,43 @@ export const PRODUCTS: Product[] = [
     ]
   },
   {
+    id: 'gramatica-inglesa-mapas-mentais-volume-2',
+    slug: 'gramatica-inglesa-mapas-mentais-volume-2',
+    title: 'GRAMÁTICA INGLESA EM MAPAS MENTAIS — VOLUME 2 + BÔNUS',
+    shortDescription: '30 mapas mentais para compreender, revisar e dominar a gramática inglesa, do básico ao intermediário, com cinco materiais bônus.',
+    fullDescription: 'Estude gramática inglesa do básico ao intermediário com 30 mapas mentais organizados em seis unidades: estrutura das frases; tempos verbais essenciais; auxiliares e verbos modais; substantivos, determinantes e quantidade; construções e comparações; e estruturas intermediárias. O material inclui cinco bônus com exercícios e gabarito, tabela de tempos verbais e verbos irregulares essenciais, guia rápido de formação de frases, erros comuns de brasileiros em inglês e revisão final com plano de estudos.',
+    price: 19.99,
+    badge: '30 MAPAS + 5 BÔNUS',
+    categories: ['ingles', 'mapas-mentais'],
+    image: '/assets/images/gramatica-mapas.png',
+    contentLabel: 'Gramática Inglesa · Volume 2 · 30 mapas mentais + bônus',
+    mapsCount: 30,
+    format: 'PDF Digital + 5 Bônus',
+    rating: 0,
+    reviewsCount: 0,
+    whatYouGet: [
+      '30 mapas mentais de gramática inglesa, do básico ao intermediário',
+      'Cinco materiais bônus para exercícios, consulta e revisão',
+      'Plano de estudos com revisão final'
+    ],
+    subjects: [
+      'Estrutura das frases: estrutura básica da frase em inglês; sujeito, verbo e complemento; frases afirmativas, negativas e interrogativas; ordem das palavras; pronomes sujeito e objeto',
+      'Tempos verbais essenciais: Simple Present; Present Continuous; Simple Past; futuro com WILL e GOING TO; Present Perfect',
+      'Auxiliares e verbos modais: DO e DOES; DID; CAN e COULD; MUST, HAVE TO e SHOULD; verbos regulares e irregulares',
+      'Substantivos, determinantes e quantidade: countable e uncountable nouns; A, AN e THE; SOME, ANY, MUCH e MANY; possessive pronouns e possessive adjectives; demonstratives — THIS, THAT, THESE e THOSE',
+      'Construções e comparações: adjectives e adverbs; comparative e superlative; prepositions of time — IN, ON e AT; prepositions of place and movement; conjunctions — AND, BUT, BECAUSE, SO e OR',
+      'Estruturas intermediárias: WH-questions com WHAT, WHERE, WHEN, WHO, WHY e HOW; imperatives; first conditional; passive voice; revisão geral da gramática inglesa',
+      'Bônus: exercícios de gramática com gabarito; tabela de tempos verbais e verbos irregulares essenciais; guia rápido de formação de frases; erros comuns de brasileiros em inglês; revisão final e plano de estudos'
+    ],
+    targetAudience: [
+      'Estudantes de inglês que desejam avançar do nível básico ao intermediário',
+      'Pessoas que querem revisar gramática inglesa com mapas mentais e exercícios'
+    ],
+    isFeatured: true,
+    isBestSeller: false,
+    kiwifyCheckoutUrl: 'https://pay.kiwify.com.br/Qfr39Gq'
+  },
+  {
     id: 'etec-mapas-mentais',
     slug: 'etec-mapas-mentais',
     title: 'MAPAS MENTAIS PARA ETEC',
