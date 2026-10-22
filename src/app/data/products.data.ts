@@ -604,6 +604,40 @@ export const PRODUCTS: Product[] = [
     kiwifyCheckoutUrl: 'https://pay.kiwify.com.br/uammIt6'
   },
   {
+    id: 'html-css-javascript-mapas-mentais-projeto-real',
+    slug: 'html-css-javascript-mapas-mentais-projeto-real',
+    title: 'HTML, CSS E JAVASCRIPT EM MAPAS MENTAIS — DO ZERO AO PROJETO REAL',
+    shortDescription: '20 mapas mentais de HTML, CSS e JavaScript, com um projeto completo para construir um site moderno e responsivo.',
+    fullDescription: 'Aprenda HTML, CSS e JavaScript do zero ao projeto real com 20 mapas mentais organizados em quatro seções: estrutura do site com HTML; design e responsividade com CSS; interatividade com JavaScript; e integração das tecnologias em um projeto completo de site profissional. O material acompanha os ajustes finais, testes e publicação do projeto.',
+    price: 14.99,
+    badge: '20 MAPAS + PROJETO COMPLETO',
+    categories: ['programacao', 'mapas-mentais'],
+    image: '/assets/images/html-mapas.png',
+    contentLabel: 'HTML, CSS e JavaScript · 20 mapas mentais + projeto real',
+    mapsCount: 20,
+    format: 'PDF Digital + Projeto Completo',
+    rating: 0,
+    reviewsCount: 0,
+    whatYouGet: [
+      '20 mapas mentais de HTML, CSS e JavaScript',
+      'Projeto completo para construir um site moderno e responsivo',
+      'Conteúdo desde os fundamentos até os ajustes, testes e publicação'
+    ],
+    subjects: [
+      'HTML — estrutura do site: o que é HTML e como funciona; estrutura básica do HTML; títulos, parágrafos e links; imagens, listas e tabelas; formulários e elementos semânticos',
+      'CSS — design e responsividade: o que é CSS e como funciona; seletores e propriedades; cores, fontes e fundos; box model, margens e espaçamentos; Flexbox na prática; Grid e responsividade',
+      'JavaScript — interatividade do site: o que é JavaScript e como funciona; variáveis, tipos de dados e operadores; condições e estrutura de repetição; funções, arrays e objetos; DOM e manipulação de elementos da página; eventos e validação de formulários',
+      'Projeto real — site profissional: integração de HTML, CSS e JavaScript; estrutura e organização do projeto; ajustes finais, testes e publicação'
+    ],
+    targetAudience: [
+      'Iniciantes que querem aprender HTML, CSS e JavaScript do zero',
+      'Estudantes que desejam praticar os fundamentos construindo um site completo e responsivo'
+    ],
+    isFeatured: true,
+    isBestSeller: false,
+    kiwifyCheckoutUrl: 'https://pay.kiwify.com.br/yQxMlMH'
+  },
+  {
     id: 'sql-em-mapas-mentais-basico-consultas-avancadas',
     slug: 'sql-em-mapas-mentais-basico-consultas-avancadas',
     title: 'SQL EM MAPAS MENTAIS — Do Básico às Consultas Avançadas + 8 Bônus',
