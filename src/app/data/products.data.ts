@@ -592,6 +592,41 @@ export const PRODUCTS: Product[] = [
     kiwifyCheckoutUrl: 'https://pay.kiwify.com.br/HJ1kUsQ'
   },
   {
+    id: 'direito-administrativo-40-mapas-mentais',
+    slug: 'direito-administrativo-40-mapas-mentais',
+    title: 'DIREITO ADMINISTRATIVO EM MAPAS MENTAIS — 40 MAPAS + BÔNUS DE 5 SIMULADOS',
+    shortDescription: '40 mapas mentais de Direito Administrativo para concursos, com conteúdos organizados em cinco seções e bônus de cinco simulados.',
+    fullDescription: 'Estude Direito Administrativo para concursos com 40 mapas mentais organizados em cinco seções: fundamentos e princípios; atos, poderes e agentes públicos; serviços, controle e responsabilidade; licitações e contratos administrativos; e revisão e preparação para provas. O material inclui ainda cinco simulados bônus para praticar e revisar os conteúdos.',
+    price: 19.99,
+    badge: '40 MAPAS + 5 SIMULADOS',
+    categories: ['estudos', 'mapas-mentais'],
+    image: '/assets/images/direito-mapas.png',
+    contentLabel: 'Direito Administrativo · 40 mapas mentais + 5 simulados',
+    mapsCount: 40,
+    format: 'PDF + 5 Simulados',
+    rating: 0,
+    reviewsCount: 0,
+    whatYouGet: [
+      '40 mapas mentais de Direito Administrativo organizados em cinco seções',
+      'Bônus de cinco simulados para praticar os conteúdos estudados',
+      'Quadro comparativo, revisão de pegadinhas e resumo geral para provas'
+    ],
+    subjects: [
+      'Fundamentos e princípios: conceito, objeto e fontes do Direito Administrativo; Estado, Governo e Administração Pública; regime jurídico-administrativo; princípios expressos da Administração Pública — LIMPE; princípios implícitos e reconhecidos; poderes e deveres da Administração Pública; organização administrativa — Administração Direta e Indireta; descentralização, desconcentração e órgãos públicos',
+      'Atos, poderes e agentes públicos: atos administrativos — conceito e elementos; atributos dos atos administrativos; classificação e espécies de atos administrativos; anulação, revogação e convalidação; poderes administrativos — hierárquico e disciplinar; poderes regulamentar e de polícia; abuso de poder — excesso e desvio de finalidade; agentes públicos — conceitos e classificações; cargos, empregos e funções públicas; deveres, responsabilidades e sanções dos agentes públicos',
+      'Serviços, controle e responsabilidade: serviços públicos — conceitos e princípios; delegação de serviços públicos — concessão e permissão; bens públicos — classificação e características; uso, alienação e proteção dos bens públicos; responsabilidade civil do Estado; controle administrativo e autotutela; controle legislativo e controle judicial; improbidade administrativa — noções essenciais; processo administrativo — princípios e etapas; processo administrativo federal — Lei nº 9.784/1999',
+      'Licitações e contratos administrativos: licitações — conceitos, finalidades e princípios; modalidades de licitação na Lei nº 14.133/2021; fases da licitação e procedimentos; contratação direta — dispensa e inexigibilidade; critérios de julgamento e procedimentos auxiliares; contratos administrativos — características e cláusulas; execução, alteração e extinção dos contratos; sanções, fiscalização e gestão contratual',
+      'Revisão e preparação para provas: quadro comparativo de serviços, poderes e atos; organização administrativa e agentes públicos — revisão; principais pegadinhas de Direito Administrativo em concursos; revisão geral — quadro-resumo de Direito Administrativo'
+    ],
+    targetAudience: [
+      'Candidatos que estudam Direito Administrativo para concursos públicos',
+      'Estudantes que querem revisar os principais tópicos da disciplina com mapas mentais e simulados'
+    ],
+    isFeatured: true,
+    isBestSeller: false,
+    kiwifyCheckoutUrl: 'https://pay.kiwify.com.br/PXV7tHr'
+  },
+  {
     id: 'logica-programacao-mapas-mentais-edicao-2026-2027',
     slug: 'logica-programacao-mapas-mentais-edicao-2026-2027',
     title: 'LÓGICA DE PROGRAMAÇÃO EM MAPAS MENTAIS EDIÇÃO 2026/2027',
