@@ -232,6 +232,42 @@ export const PRODUCTS: Product[] = [
     kiwifyCheckoutUrl: 'https://pay.kiwify.com.br/Ce0ayHQ'
   },
   {
+    id: 'detran-2026-50-mapas-mentais-3-simulados-cnh',
+    slug: 'detran-2026-50-mapas-mentais-3-simulados-cnh',
+    title: 'DETRAN 2026 — 50 MAPAS MENTAIS + 3 SIMULADOS DA CNH',
+    shortDescription: '50 mapas mentais para estudar, compreender e revisar os principais conteúdos de trânsito, com três simulados da CNH.',
+    fullDescription: 'Prepare-se para a prova teórica do DETRAN 2026 com 50 mapas mentais organizados em seis unidades: fundamentos e legislação; sinalização viária; circulação e conduta; infrações e responsabilidades; direção defensiva, emergências e veículo; e revisão com simulados. Inclui três simulados da CNH para praticar os conteúdos e revisar antes da prova.',
+    price: 19.99,
+    badge: '50 MAPAS + 3 SIMULADOS',
+    categories: ['estudos', 'mapas-mentais'],
+    image: '/assets/images/detranmotorista-mapas.png',
+    contentLabel: 'DETRAN 2026 · 50 mapas mentais + 3 simulados da CNH',
+    mapsCount: 50,
+    format: 'PDF + 3 Simulados',
+    rating: 0,
+    reviewsCount: 0,
+    whatYouGet: [
+      '50 mapas mentais sobre os principais conteúdos da prova teórica de trânsito',
+      'Três simulados da CNH para praticar e revisar',
+      'Conteúdo organizado em seis unidades temáticas, da legislação à revisão final'
+    ],
+    subjects: [
+      'Fundamentos e legislação: fundamentos do trânsito e cidadania; Sistema Nacional de Trânsito — órgãos e competências; CTB — conceitos, definições e vias terrestres; categorias de habilitação e requisitos; documentos do condutor e do veículo',
+      'Sinalização viária: fundamentos e classificação; placas de regulamentação, advertência e indicação e serviços auxiliares; marcas viárias, linhas e símbolos no pavimento; semáforos e sinalização luminosa; gestos de agentes e sinais do condutor; sinalização temporária e obras na via',
+      'Circulação e conduta: normas gerais de circulação e conduta; preferência, cruzamentos e rotatórias; ultrapassagem e mudança de faixa; velocidade, distância de segurança e frenagem; parada, estacionamento e imobilização; circulação de pedestres, ciclistas e motociclistas; transporte de passageiros, crianças e uso do cinto; circulação em rodovias, túneis e condições especiais',
+      'Infrações e responsabilidades: classificação e exemplos de infrações de trânsito; penalidades, pontuação e medidas administrativas; álcool, substâncias psicoativas e direção; habilitação, suspensão e cassação; crimes de trânsito — noções fundamentais; responsabilidade do condutor e consequências das infrações; fiscalização, abordagem e condutas legais',
+      'Direção defensiva, emergências e veículo: princípios fundamentais de direção defensiva; percepção de riscos e prevenção de acidentes; chuva, neblina, noite e outras condições adversas; comportamento seguro e fatores de risco; primeiros socorros — segurança e avaliação inicial; acidentes de trânsito — sinalização e acionamento de socorro; condutas proibidas ou perigosas em emergências; meio ambiente, poluição e sustentabilidade; mecânica básica — motor, painel e funcionamento; pneus, freios, suspensão e direção; iluminação, equipamentos e itens de segurança; manutenção preventiva e cuidados com o veículo; segurança veicular e inspeção antes de viajar',
+      'Revisão e simulados: revisão integrada de legislação, sinalização, direção defensiva, primeiros socorros, meio ambiente e mecânica; questões de revisão sobre legislação e circulação; questões de revisão sobre sinalização e direção defensiva; revisão final de erros frequentes e pegadinhas; simulado final e revisão estratégica'
+    ],
+    targetAudience: [
+      'Pessoas que estão se preparando para a prova teórica do DETRAN e da CNH',
+      'Estudantes que desejam revisar legislação, sinalização, circulação e direção defensiva com mapas mentais e simulados'
+    ],
+    isFeatured: true,
+    isBestSeller: false,
+    kiwifyCheckoutUrl: 'https://pay.kiwify.com.br/G4CFJz3'
+  },
+  {
     id: 'biblia-em-mapas-mentais',
     slug: 'biblia-em-mapas-mentais',
     title: 'BÍBLIA EM MAPAS MENTAIS',
