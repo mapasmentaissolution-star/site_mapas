@@ -244,6 +244,15 @@ import { WHATSAPP_URL, FREE_ENEM_PDF_URL } from '../../data/products.data';
           >
             <span>Programação</span>
           </a>
+
+          <a
+            routerLink="/mappia-mini"
+            routerLinkActive="text-[#082B5C] font-bold border-b-2 border-[#082B5C] pb-1 -mb-1"
+            class="inline-flex items-center gap-1.5 rounded-full bg-amber-100 px-2.5 py-1 font-bold text-amber-900 transition-colors hover:bg-amber-200"
+          >
+            <span>Mappia Mini</span>
+            <span class="rounded bg-[#F7C51E] px-1.5 py-0.5 text-[9px] font-black text-[#082B5C]">R$ 9,99</span>
+          </a>
         </nav>
       </div>
 
@@ -348,6 +357,15 @@ import { WHATSAPP_URL, FREE_ENEM_PDF_URL } from '../../data/products.data';
                 <span>Programação</span>
               </div>
               <mat-icon class="!text-sm text-slate-400">chevron_right</mat-icon>
+            </a>
+
+            <a
+              routerLink="/mappia-mini"
+              (click)="closeMobileMenu()"
+              class="rounded-lg border border-amber-200 bg-amber-50 px-3 py-2 font-bold text-amber-900 transition-colors hover:bg-amber-100 flex items-center justify-between"
+            >
+              <span>Mappia Mini</span>
+              <span class="rounded bg-[#F7C51E] px-2 py-0.5 text-[10px] font-black text-[#082B5C]">R$ 9,99</span>
             </a>
           </div>
 

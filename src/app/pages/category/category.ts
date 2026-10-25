@@ -5,7 +5,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { CatalogData } from '../../services/catalog-data';
 import { ProductCard } from '../../components/product-card/product-card';
 import { EnemFreeGift } from '../../components/enem-free-gift/enem-free-gift';
-import { FREE_ENEM_PDF_URL } from '../../data/products.data';
+import { FREE_ENEM_PDF_URL, MAPPIA_MINI_PRICE } from '../../data/products.data';
 
 @Component({
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -37,7 +37,58 @@ import { FREE_ENEM_PDF_URL } from '../../data/products.data';
               {{ categoryInfo().description }}
             </p>
           </div>
+
+          @if (currentSlug().startsWith('mappia-mini')) {
+            <div class="mt-6 inline-flex items-center gap-3 rounded-2xl border-2 border-amber-300 bg-gradient-to-r from-amber-50 to-yellow-100 px-5 py-3 shadow-md">
+              <mat-icon class="!text-2xl text-amber-600">sell</mat-icon>
+              <div>
+                <span class="block text-[10px] font-black uppercase tracking-widest text-amber-800">Todos os mapas Mappia Mini</span>
+                <strong class="font-display text-2xl font-black text-[#082B5C]">R$ {{ miniPriceLabel }}</strong>
+              </div>
+            </div>
+          }
         </div>
+
+        @if (currentSlug() === 'mappia-mini') {
+          <section class="mb-8" aria-label="Categorias Mappia Mini">
+            <h2 class="mb-4 font-display text-lg font-black text-[#082B5C]">Explore as categorias</h2>
+            <div class="grid grid-cols-1 gap-4 sm:grid-cols-3">
+              <a
+                routerLink="/mappia-mini/culinaria"
+                class="group flex items-center gap-3 rounded-2xl border border-amber-200 bg-white p-4 shadow-xs transition hover:-translate-y-0.5 hover:border-amber-400 hover:shadow-md"
+              >
+                <span class="flex h-11 w-11 items-center justify-center rounded-xl bg-amber-100 text-amber-700">
+                  <mat-icon>restaurant</mat-icon>
+                </span>
+                <span class="flex-1">
+                  <strong class="block text-sm font-bold text-slate-900">Culinária</strong>
+                  <span class="text-xs text-slate-500">Receitas e técnicas práticas</span>
+                </span>
+                <mat-icon class="text-amber-600 transition group-hover:translate-x-1">arrow_forward</mat-icon>
+              </a>
+
+              <div class="flex items-center gap-3 rounded-2xl border border-slate-200 bg-slate-50 p-4">
+                <span class="flex h-11 w-11 items-center justify-center rounded-xl bg-slate-200 text-slate-500">
+                  <mat-icon>handyman</mat-icon>
+                </span>
+                <span>
+                  <strong class="block text-sm font-bold text-slate-700">Artesanato</strong>
+                  <span class="text-xs text-slate-500">Novos mapas em breve</span>
+                </span>
+              </div>
+
+              <div class="flex items-center gap-3 rounded-2xl border border-slate-200 bg-slate-50 p-4">
+                <span class="flex h-11 w-11 items-center justify-center rounded-xl bg-slate-200 text-slate-500">
+                  <mat-icon>computer</mat-icon>
+                </span>
+                <span>
+                  <strong class="block text-sm font-bold text-slate-700">Informática</strong>
+                  <span class="text-xs text-slate-500">Novos mapas em breve</span>
+                </span>
+              </div>
+            </div>
+          </section>
+        }
 
         <!-- Destaque Especial: Brinde Gratuito 5 Mapas ENEM 2026 -->
         @if (currentSlug() === 'enem-2026') {
@@ -134,10 +185,17 @@ export class CategoryPage {
   readonly routeData = toSignal(this.route.url);
   readonly selectedSort = signal<string>('featured');
   readonly freePdfUrl = FREE_ENEM_PDF_URL;
+  readonly miniPriceLabel = MAPPIA_MINI_PRICE.toLocaleString('pt-BR', {
+    minimumFractionDigits: 2,
+    maximumFractionDigits: 2
+  });
 
   readonly currentSlug = computed(() => {
     const url = this.routeData();
     if (url && url.length > 0) {
+      if (url[0].path === 'mappia-mini' && url[1]?.path === 'culinaria') {
+        return 'mappia-mini-culinaria';
+      }
       return url[0].path;
     }
     return 'mapas-mentais';

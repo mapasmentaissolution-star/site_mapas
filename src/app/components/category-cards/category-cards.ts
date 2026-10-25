@@ -203,6 +203,44 @@ import { MatIconModule } from '@angular/material/icon';
               </a>
             </div>
           </div>
+
+          <!-- Mappia Mini -->
+          <div class="group relative flex flex-col justify-between overflow-hidden rounded-3xl border border-amber-300 bg-gradient-to-br from-amber-50 via-white to-yellow-50 p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-amber-400 hover:shadow-lg">
+            <div class="pointer-events-none absolute -right-10 -top-10 h-32 w-32 rounded-full bg-amber-200/40 transition-transform group-hover:scale-125"></div>
+            <div class="relative">
+              <div class="mb-4 flex items-center justify-between gap-3">
+                <div class="flex h-12 w-12 items-center justify-center rounded-2xl border border-amber-200 bg-white text-amber-700 shadow-xs">
+                  <mat-icon class="!text-2xl">auto_awesome</mat-icon>
+                </div>
+                <span class="rounded-xl border-2 border-amber-400 bg-[#F7C51E] px-3 py-1.5 text-center text-[10px] font-black uppercase leading-tight tracking-wider text-[#082B5C] shadow-md">
+                  Todos por<br /><strong class="text-base">R$ 9,99</strong>
+                </span>
+              </div>
+
+              <h3 class="mb-2 font-display text-lg font-black text-slate-900 transition-colors group-hover:text-amber-800">
+                Mappia Mini
+              </h3>
+
+              <p class="mb-4 line-clamp-3 text-xs leading-relaxed text-slate-600">
+                Mapas mentais práticos e acessíveis. Comece pela Culinária e explore novas categorias em breve.
+              </p>
+
+              <div class="mb-2 rounded-lg border border-amber-200 bg-white/80 px-2.5 py-1 text-[11px] font-medium text-amber-900">
+                Culinária · Artesanato · Informática
+              </div>
+            </div>
+
+            <div class="relative flex items-center justify-between border-t border-amber-200/80 pt-4">
+              <span class="font-mono text-xs font-bold text-amber-800">5 mapas de Culinária disponíveis</span>
+              <a
+                routerLink="/mappia-mini"
+                class="inline-flex items-center gap-1 text-xs font-bold text-[#0D4F91] hover:text-[#082B5C]"
+              >
+                <span>Acessar</span>
+                <mat-icon class="!text-base">arrow_forward</mat-icon>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>

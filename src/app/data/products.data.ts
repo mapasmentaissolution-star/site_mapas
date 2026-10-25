@@ -2,6 +2,7 @@ import { Product, CategoryInfo, Testimonial, FaqItem } from '../models/product.m
 
 export const FREE_ENEM_PDF_URL = '/assets/mapa-enem-gratis.pdf';
 export const WHATSAPP_URL = 'https://wa.me/5511987973086?text=Ol%C3%A1%2C%20gostaria%20de%20tirar%20d%C3%BAvidas%20sobre%20os%20mapas%20mentais%20da%20Mappia!';
+export const MAPPIA_MINI_PRICE = 9.99;
 
 export const CATEGORIES: CategoryInfo[] = [
   {
@@ -63,6 +64,26 @@ export const CATEGORIES: CategoryInfo[] = [
     icon: 'terminal',
     color: '#0D4F91',
     badgeText: '20 mapas mentais disponíveis'
+  },
+  {
+    id: 'mappia-mini',
+    slug: 'mappia-mini',
+    title: 'Mappia Mini',
+    shortTitle: 'Mappia Mini',
+    description: 'Mapas mentais práticos e acessíveis para aprender habilidades do dia a dia. Todos os mapas desta seção por R$ 9,99.',
+    icon: 'auto_awesome',
+    color: '#D99A16',
+    badgeText: 'Todos por R$ 9,99'
+  },
+  {
+    id: 'mappia-mini-culinaria',
+    slug: 'mappia-mini-culinaria',
+    title: 'Mappia Mini • Culinária',
+    shortTitle: 'Culinária',
+    description: 'Mapas mentais práticos de culinária para aprender receitas, técnicas, apresentação e custos.',
+    icon: 'restaurant',
+    color: '#D99A16',
+    badgeText: 'Mappia Mini · R$ 9,99'
   }
 ];
 
@@ -785,6 +806,40 @@ export const PRODUCTS: Product[] = [
     isFeatured: true,
     isBestSeller: false,
     kiwifyCheckoutUrl: 'https://pay.kiwify.com.br/4Do7kFQ'
+  },
+  {
+    id: 'brigadeiro-gourmet-5-mapas-mentais-praticos',
+    slug: 'brigadeiro-gourmet-5-mapas-mentais-praticos',
+    title: 'Brigadeiro Gourmet — 5 Mapas Mentais Práticos',
+    shortDescription: 'Aprenda a preparar, personalizar e dar os primeiros passos para vender brigadeiros gourmet com 5 mapas mentais práticos.',
+    fullDescription: 'Do zero ao doce negócio: aprenda os fundamentos do brigadeiro gourmet com 5 mapas mentais práticos. Conheça os ingredientes e os pontos do brigadeiro; prepare uma receita base; explore sabores e variações; aprenda técnicas de modelagem e acabamento; e organize custos, apresentação e primeiros passos para vender.',
+    price: MAPPIA_MINI_PRICE,
+    badge: 'Mappia Mini · R$ 9,99',
+    categories: ['mappia-mini', 'mappia-mini-culinaria', 'mapas-mentais'],
+    image: '/assets/images/brigadeiro-gourmet.png',
+    contentLabel: 'Mappia Mini · Culinária',
+    mapsCount: 5,
+    format: 'PDF Digital · A4',
+    rating: 0,
+    reviewsCount: 0,
+    whatYouGet: [
+      '5 mapas mentais práticos sobre brigadeiro gourmet',
+      'Conteúdo visual sobre receita base, sabores, modelagem, acabamento, custos e vendas'
+    ],
+    subjects: [
+      'Conhecendo o brigadeiro gourmet',
+      'Receita base',
+      'Sabores e variações',
+      'Modelagem e acabamento',
+      'Custos e venda'
+    ],
+    targetAudience: [
+      'Quem quer aprender a preparar e personalizar brigadeiros gourmet',
+      'Quem deseja conhecer os primeiros passos para vender brigadeiros'
+    ],
+    isFeatured: true,
+    isBestSeller: false,
+    kiwifyCheckoutUrl: 'https://pay.kiwify.com.br/THUXKP1'
   }
 ];
 

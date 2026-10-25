@@ -30,6 +30,14 @@ export const routes: Routes = [
     loadComponent: () => import('./pages/category/category').then(m => m.CategoryPage)
   },
   {
+    path: 'mappia-mini',
+    loadComponent: () => import('./pages/category/category').then(m => m.CategoryPage)
+  },
+  {
+    path: 'mappia-mini/culinaria',
+    loadComponent: () => import('./pages/category/category').then(m => m.CategoryPage)
+  },
+  {
     path: 'simulado',
     loadComponent: () => import('./pages/category/category').then(m => m.CategoryPage)
   },
