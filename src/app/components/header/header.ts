@@ -19,15 +19,14 @@ import { WHATSAPP_URL, FREE_ENEM_PDF_URL } from '../../data/products.data';
             [href]="freePdfUrl"
             target="_blank"
             rel="noopener noreferrer"
-            download="mapa-enem-gratis.pdf"
-            class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-[#F7C51E] hover:bg-amber-400 text-slate-950 font-black text-[11px] transition-all shadow-xs"
+            class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-[#25D366] hover:bg-[#1EBE5D] text-slate-950 font-black text-[11px] transition-all shadow-xs"
           >
-            <span>🎁 PDF GRÁTIS:</span>
-            <span class="underline">BAIXAR 5 MAPAS ENEM 2026</span>
+            <span>🎁 BRINDE GRATUITO:</span>
+            <span class="underline">RECEBER 5 MAPAS ENEM NO WHATSAPP</span>
             <span class="text-xs">→</span>
           </a>
           <span class="hidden xl:inline text-slate-300 text-xs">
-            · Amostra oficial em alta definição pronta para imprimir
+            · Amostra oficial enviada no seu WhatsApp
           </span>
         </div>
         <div class="hidden md:flex items-center gap-4 text-[11px] text-slate-300">
@@ -201,16 +200,12 @@ import { WHATSAPP_URL, FREE_ENEM_PDF_URL } from '../../data/products.data';
             [href]="freePdfUrl"
             target="_blank"
             rel="noopener noreferrer"
-            download="mapa-enem-gratis.pdf"
-            class="relative inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-black text-xs shadow-md transition-all hover:scale-105 ring-2 ring-emerald-300/60"
-            title="Baixar 5 Mapas Mentais do ENEM 2026 Gratuitamente em PDF"
+            class="relative inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-[#25D366] hover:bg-[#1EBE5D] text-slate-950 font-black text-xs shadow-md transition-all hover:scale-105 ring-2 ring-emerald-300/60"
+            title="Quero Receber Meu Material Gratuito do ENEM 2026 via WhatsApp"
           >
-            <span class="w-2 h-2 rounded-full bg-[#F7C51E] animate-ping"></span>
-            <mat-icon class="!text-sm !w-4 !h-4 text-[#F7C51E]">card_giftcard</mat-icon>
-            <span class="tracking-wide">PDF ENEM GRÁTIS</span>
-            <span class="text-[9px] bg-[#F7C51E] text-slate-950 px-1.5 py-0.2 rounded font-black uppercase">
-              5 Mapas
-            </span>
+            <span class="w-2 h-2 rounded-full bg-slate-950 animate-ping"></span>
+            <mat-icon class="!text-sm !w-4 !h-4 text-slate-950">card_giftcard</mat-icon>
+            <span class="tracking-wide">QUERO RECEBER MATERIAL GRATUITO</span>
           </a>
 
           <a
@@ -301,13 +296,12 @@ import { WHATSAPP_URL, FREE_ENEM_PDF_URL } from '../../data/products.data';
               [href]="freePdfUrl"
               target="_blank"
               rel="noopener noreferrer"
-              download="mapa-enem-gratis.pdf"
               (click)="closeMobileMenu()"
               class="px-3 py-2 rounded-xl bg-emerald-50 text-emerald-900 border border-emerald-200/60 font-bold flex items-center justify-between"
             >
               <div class="flex items-center gap-2">
                 <mat-icon class="!text-base text-emerald-600">card_giftcard</mat-icon>
-                <span>5 Mapas ENEM (Brinde Grátis)</span>
+                <span>Quero Receber Material Gratuito</span>
               </div>
               <span class="text-[10px] bg-emerald-600 text-white px-2 py-0.5 rounded font-black uppercase">Grátis</span>
             </a>

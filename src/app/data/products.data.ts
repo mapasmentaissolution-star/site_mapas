@@ -1,7 +1,8 @@
 import { Product, CategoryInfo, Testimonial, FaqItem } from '../models/product.model';
 
-export const FREE_ENEM_PDF_URL = '/assets/mapa-enem-gratis.pdf';
+export const FREE_ENEM_PDF_URL = 'https://wa.me/5511987973086?text=Ol%C3%A1%21%20Gostaria%20de%20receber%20meu%20material%20gratuito%20do%20ENEM%20%285%20Mapas%20Mentais%29.';
 export const WHATSAPP_URL = 'https://wa.me/5511987973086?text=Ol%C3%A1%2C%20gostaria%20de%20tirar%20d%C3%BAvidas%20sobre%20os%20mapas%20mentais%20da%20Mappia!';
+export const INSTAGRAM_URL = 'https://www.instagram.com/mapasmentaissolution?psln=MWszYzI4c21zaHc1NA==';
 export const MAPPIA_MINI_PRICE = 9.99;
 
 export const CATEGORIES: CategoryInfo[] = [
@@ -118,7 +119,7 @@ export const PRODUCTS: Product[] = [
       'Arquivo PDF completo em alta resolução pronto para impressão em A4',
       '5 Mapas Mentais ilustrados das 5 áreas do conhecimento',
       'Esquemas mnemônicos e dicas do que mais cai na prova',
-      'Download imediato e direto em PDF, sem custo'
+      'Envio gratuito e imediato do PDF diretamente pelo WhatsApp'
     ],
     targetAudience: [
       'Estudantes que vão prestar o ENEM 2026 e querem conhecer os mapas da Mappia',
@@ -851,38 +852,58 @@ export const TESTIMONIALS: Testimonial[] = [
     location: 'Rio de Janeiro, RJ',
     avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80',
     stars: 5,
-    comment: 'O Combo ENEM com os 150 mapas e o simulado com 40 questões comentadas foram decisivos na minha aprovação. Eu revisava Biologia e História em minutos antes de dormir. O visual é impecável!',
+    comment: 'Adquiri o material do ENEM (Combo 150 Mapas + Simulado) e o conteúdo é simplesmente sensacional! O material do Enem é bom demais, muito organizado e direto ao ponto. Me ajudou a revisar Biologia e História em poucos minutos antes da prova.',
     material: 'ENEM 2026: 150 Mapas Mentais + Simulado'
   },
   {
     id: 'test-2',
-    name: 'Lucas Mendes',
-    role: 'Nota 960 na Redação ENEM',
+    name: 'Pr. Carlos Eduardo',
+    role: 'Líder do Ministério de Ensino',
     location: 'Belo Horizonte, MG',
     avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80',
     stars: 5,
-    comment: 'Material de altíssimo nível. A folha de respostas e o gabarito comentado do simulado me deram o ritmo exato que eu precisava. O melhor investimento para o ENEM.',
-    material: 'ENEM 2026: 150 Mapas Mentais + Simulado'
+    comment: 'A Enciclopédia Bíblica em mapas mentais é um excelente material de estudos! A riqueza de detalhes, cronologia e clareza visual facilitam demais a preparação de aulas e o estudo bíblico profundo. Recomendo de olhos fechados.',
+    material: 'Enciclopédia Bíblica em Mapas Mentais'
   },
   {
     id: 'test-3',
     name: 'Mariana Carvalho',
-    role: 'Estudante de Direito',
+    role: 'Estudante & Concursanda',
     location: 'Curitiba, PR',
     avatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=150&q=80',
     stars: 5,
-    comment: 'Comprei o material de Bíblia e depois o de Estudos e Concursos. A clareza visual é impressionante! Você bate o olho e o cérebro memoriza na hora.',
-    material: 'Bíblia em Mapas Mentais'
+    comment: 'Comprei a Enciclopédia Bíblica e também os materiais de estudos para vestibulares. A qualidade de diagramação e o nível de síntese são impecáveis. É sem dúvida um material de estudos excelente para quem quer aprender rápido!',
+    material: 'Enciclopédia Bíblica & Material de Estudos'
   },
   {
     id: 'test-4',
-    name: 'Gabriel Ribeiro',
-    role: 'Aprovado em Engenharia (USP)',
+    name: 'Matheus Lima',
+    role: 'Nota 960 na Redação ENEM',
     location: 'São Paulo, SP',
     avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&q=80',
     stars: 5,
-    comment: 'O Simulado de 40 questões é muito fiel ao estilo do Inep. Diagnostiquei exatamente onde precisava reforçar em Física e Química.',
-    material: 'Simulado ENEM 2026'
+    comment: 'O material do ENEM que adquiri aqui na Mappia foi o diferencial para a minha aprovação. É um material bom, didático e com resolução impecável em PDF. O simulado com 40 questões me deu a confiança exata que eu precisava!',
+    material: 'ENEM 2026: Combo Completo'
+  },
+  {
+    id: 'test-5',
+    name: 'Fernanda Oliveira',
+    role: 'Aprovada em Direito (UFMG)',
+    location: 'Belo Horizonte, MG',
+    avatar: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=150&q=80',
+    stars: 5,
+    comment: 'Assim que baixei os 5 mapas grátis vi que o material do ENEM era bom de verdade e decidi comprar o combo completo. Valeu cada centavo! Consegui fixar fórmulas e conceitos de exatas com muita facilidade.',
+    material: 'ENEM 2026: 150 Mapas Mentais'
+  },
+  {
+    id: 'test-6',
+    name: 'Gabriel Ribeiro',
+    role: 'Estudante de Teologia & Professor',
+    location: 'Campinas, SP',
+    avatar: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=150&q=80',
+    stars: 5,
+    comment: 'Uso a Enciclopédia Bíblica diariamente nas minhas leituras e aulas. Este material de estudos bíblicos é de um nível pedagógico fantástico. Vale muito a pena ter esse acervo digital!',
+    material: 'Enciclopédia Bíblica em Mapas Mentais'
   }
 ];
 

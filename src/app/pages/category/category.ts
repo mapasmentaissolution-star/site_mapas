@@ -92,20 +92,20 @@ import { FREE_ENEM_PDF_URL, MAPPIA_MINI_PRICE } from '../../data/products.data';
 
         <!-- Destaque Especial: Brinde Gratuito 5 Mapas ENEM 2026 -->
         @if (currentSlug() === 'enem-2026') {
-          <div class="mb-8 p-6 rounded-3xl bg-gradient-to-r from-[#082B5C] via-[#0D4F91] to-[#082B5C] text-white border-2 border-[#F7C51E] shadow-xl flex flex-col md:flex-row items-center justify-between gap-6">
+          <div class="mb-8 p-6 rounded-3xl bg-gradient-to-r from-[#082B5C] via-[#0D4F91] to-[#082B5C] text-white border-2 border-[#25D366] shadow-xl flex flex-col md:flex-row items-center justify-between gap-6">
             <div class="flex items-center gap-4">
-              <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-[#F7C51E] text-slate-950 flex items-center justify-center shrink-0 shadow-md">
-                <mat-icon class="!text-3xl text-[#082B5C]">card_giftcard</mat-icon>
+              <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-[#25D366] text-slate-950 flex items-center justify-center shrink-0 shadow-md">
+                <mat-icon class="!text-3xl text-slate-950">card_giftcard</mat-icon>
               </div>
               <div>
-                <span class="inline-block px-2.5 py-0.5 rounded-full bg-[#F7C51E] text-slate-950 text-[10px] font-black uppercase tracking-wider mb-1">
-                  100% GRATUITO • DOWNLOAD LIBERADO
+                <span class="inline-block px-2.5 py-0.5 rounded-full bg-[#25D366] text-slate-950 text-[10px] font-black uppercase tracking-wider mb-1">
+                  100% GRATUITO • MATERIAL NO WHATSAPP
                 </span>
                 <h3 class="font-display font-black text-lg sm:text-xl text-white">
                   5 Mapas Mentais do ENEM 2026 em PDF
                 </h3>
                 <p class="text-xs text-slate-200 mt-0.5 max-w-xl">
-                  Amostra oficial com 1 mapa de cada uma das 5 áreas para você testar nossa metodologia visual sem custo nenhum.
+                  Amostra oficial com 1 mapa de cada uma das 5 áreas para receber diretamente no seu WhatsApp sem custo nenhum.
                 </p>
               </div>
             </div>
@@ -114,11 +114,13 @@ import { FREE_ENEM_PDF_URL, MAPPIA_MINI_PRICE } from '../../data/products.data';
               [href]="freePdfUrl"
               target="_blank"
               rel="noopener noreferrer"
-              download="mapa-enem-gratis.pdf"
-              class="w-full md:w-auto px-6 py-3.5 bg-[#F7C51E] hover:bg-amber-400 text-slate-950 font-display font-black text-xs sm:text-sm rounded-xl transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5 shrink-0 flex items-center justify-center gap-2 uppercase tracking-wider cursor-pointer"
+              class="w-full md:w-auto px-6 py-3.5 bg-[#25D366] hover:bg-[#1EBE5D] text-slate-950 font-display font-black text-xs sm:text-sm rounded-xl transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5 shrink-0 flex items-center justify-center gap-2 uppercase tracking-wider cursor-pointer"
             >
-              <mat-icon class="!text-lg text-[#082B5C]">download</mat-icon>
-              <span>BAIXAR PDF GRÁTIS</span>
+              <svg class="w-5 h-5 fill-current shrink-0" viewBox="0 0 24 24">
+                <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.698.077-2.022-.472-1.688-.7-2.775-2.42-2.859-2.533-.084-.113-.683-.907-.683-1.731 0-.824.432-1.229.586-1.398.154-.17.336-.212.449-.212.112 0 .225.001.323.006.103.005.241-.039.377.29.144.35.488 1.19.531 1.277.043.088.072.19.014.305-.058.115-.088.187-.174.288-.087.101-.183.226-.261.304-.087.087-.178.182-.077.355.101.174.45 1.741 1.543 2.128.324.115.597.184.802.249.325.103.621.089.855.054.261-.039.805-.329.919-.646.114-.317.114-.588.08-.646-.034-.058-.124-.093-.268-.164z"/>
+                <path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2.05 22l4.982-1.307A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.167c-1.614 0-3.12-.442-4.417-1.211l-.317-.188-2.969.779.792-2.894-.207-.329A8.132 8.132 0 013.833 12c0-4.503 3.664-8.167 8.167-8.167 4.503 0 8.167 3.664 8.167 8.167 0 4.503-3.664 8.167-8.167 8.167z"/>
+              </svg>
+              <span>QUERO RECEBER MEU MATERIAL GRATUITO</span>
             </a>
           </div>
         }

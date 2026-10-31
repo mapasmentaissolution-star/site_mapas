@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { MatIconModule } from '@angular/material/icon';
-import { WHATSAPP_URL, FREE_ENEM_PDF_URL } from '../../data/products.data';
+import { WHATSAPP_URL, FREE_ENEM_PDF_URL, INSTAGRAM_URL } from '../../data/products.data';
 
 @Component({
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -64,9 +64,9 @@ import { WHATSAPP_URL, FREE_ENEM_PDF_URL } from '../../data/products.data';
                 </a>
               </li>
               <li>
-                <a [href]="freePdfUrl" target="_blank" rel="noopener noreferrer" download="mapa-enem-gratis.pdf" class="hover:text-white transition-colors flex items-center gap-1 text-emerald-300 font-semibold">
-                  <span>5 Mapas ENEM (Brinde Grátis)</span>
-                  <span class="text-[9px] bg-emerald-500 text-slate-950 px-1 py-0.2 rounded font-extrabold">PDF</span>
+                <a [href]="freePdfUrl" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors flex items-center gap-1 text-emerald-300 font-semibold">
+                  <span>5 Mapas ENEM (Receber Grátis)</span>
+                  <span class="text-[9px] bg-emerald-500 text-slate-950 px-1 py-0.2 rounded font-extrabold">WhatsApp</span>
                 </a>
               </li>
               <li>
@@ -141,17 +141,8 @@ import { WHATSAPP_URL, FREE_ENEM_PDF_URL } from '../../data/products.data';
               Redes Sociais
             </h4>
             <div class="flex flex-col space-y-2 text-xs text-slate-300">
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="hover:text-[#F7C51E] transition-colors flex items-center gap-2">
+              <a [href]="instagramUrl" target="_blank" rel="noopener noreferrer" class="hover:text-[#F7C51E] transition-colors flex items-center gap-2">
                 <span>Instagram</span>
-              </a>
-              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="hover:text-[#F7C51E] transition-colors flex items-center gap-2">
-                <span>YouTube</span>
-              </a>
-              <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" class="hover:text-[#F7C51E] transition-colors flex items-center gap-2">
-                <span>TikTok</span>
-              </a>
-              <a href="https://pinterest.com" target="_blank" rel="noopener noreferrer" class="hover:text-[#F7C51E] transition-colors flex items-center gap-2">
-                <span>Pinterest</span>
               </a>
             </div>
 
@@ -183,4 +174,5 @@ import { WHATSAPP_URL, FREE_ENEM_PDF_URL } from '../../data/products.data';
 export class Footer {
   readonly whatsappUrl = WHATSAPP_URL;
   readonly freePdfUrl = FREE_ENEM_PDF_URL;
+  readonly instagramUrl = INSTAGRAM_URL;
 }

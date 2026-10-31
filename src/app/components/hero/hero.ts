@@ -41,17 +41,18 @@ import { FREE_ENEM_PDF_URL } from '../../data/products.data';
 
             <!-- Action CTAs -->
             <div class="flex flex-col items-stretch gap-3.5 w-full mb-4">
-              <!-- SUPER DESTAQUE: BAIXAR PDF ENEM GRÁTIS -->
+              <!-- SUPER DESTAQUE: RECEBER MATERIAL GRATUITO VIA WHATSAPP -->
               <a
                 [href]="freePdfUrl"
                 target="_blank"
                 rel="noopener noreferrer"
-                download="mapa-enem-gratis.pdf"
-                class="inline-flex w-full items-center justify-center gap-2.5 px-4 sm:px-6 py-4 bg-gradient-to-r from-[#F7C51E] via-amber-400 to-[#F7C51E] hover:from-amber-400 hover:to-amber-500 text-slate-950 font-display font-black text-sm text-center rounded-xl transition-all shadow-xl hover:shadow-2xl hover:-translate-y-0.5 cursor-pointer ring-4 ring-amber-400/25 group"
+                class="inline-flex w-full items-center justify-center gap-2.5 px-4 sm:px-6 py-4 bg-[#25D366] hover:bg-[#1EBE5D] text-slate-950 font-display font-black text-sm text-center rounded-xl transition-all shadow-xl hover:shadow-2xl hover:-translate-y-0.5 cursor-pointer ring-4 ring-emerald-400/25 group uppercase tracking-wider"
               >
-                <mat-icon class="!text-xl text-[#082B5C] group-hover:rotate-12 transition-transform">card_giftcard</mat-icon>
-                <span>BAIXAR 5 MAPAS ENEM GRÁTIS</span>
-                <span class="text-[10px] bg-[#082B5C] text-[#F7C51E] px-2 py-0.5 rounded-md font-extrabold uppercase">PDF</span>
+                <svg class="w-5 h-5 fill-current shrink-0" viewBox="0 0 24 24">
+                  <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.698.077-2.022-.472-1.688-.7-2.775-2.42-2.859-2.533-.084-.113-.683-.907-.683-1.731 0-.824.432-1.229.586-1.398.154-.17.336-.212.449-.212.112 0 .225.001.323.006.103.005.241-.039.377.29.144.35.488 1.19.531 1.277.043.088.072.19.014.305-.058.115-.088.187-.174.288-.087.101-.183.226-.261.304-.087.087-.178.182-.077.355.101.174.45 1.741 1.543 2.128.324.115.597.184.802.249.325.103.621.089.855.054.261-.039.805-.329.919-.646.114-.317.114-.588.08-.646-.034-.058-.124-.093-.268-.164z"/>
+                  <path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2.05 22l4.982-1.307A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.167c-1.614 0-3.12-.442-4.417-1.211l-.317-.188-2.969.779.792-2.894-.207-.329A8.132 8.132 0 013.833 12c0-4.503 3.664-8.167 8.167-8.167 4.503 0 8.167 3.664 8.167 8.167 0 4.503-3.664 8.167-8.167 8.167z"/>
+                </svg>
+                <span>QUERO RECEBER MEU MATERIAL GRATUITO</span>
               </a>
 
               <a
@@ -66,7 +67,7 @@ import { FREE_ENEM_PDF_URL } from '../../data/products.data';
             <!-- Free Gift Highlight Note -->
             <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-900 text-xs font-semibold mb-8">
               <span class="w-2 h-2 rounded-full bg-emerald-500 animate-ping"></span>
-              <span>🎁 Amostra 100% gratuita das 5 áreas disponível para download imediato em PDF!</span>
+              <span>🎁 Amostra 100% gratuita das 5 áreas enviada direto no seu WhatsApp!</span>
             </div>
 
             <!-- Value Perks / Trust Checklist -->

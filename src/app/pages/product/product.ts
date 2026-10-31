@@ -133,27 +133,60 @@ import { WHATSAPP_URL } from '../../data/products.data';
                 </div>
 
                 <!-- Price Area -->
-                <div class="p-5 rounded-2xl bg-[#F6F8FA] border border-slate-200 mb-6">
-                  @if (prod.originalPrice) {
-                    <div class="text-xs text-slate-400 line-through">
-                      De R$ {{ prod.originalPrice | number:'1.2-2' }} por apenas
+                @if (prod.price === 0) {
+                  <div class="p-5 rounded-2xl bg-emerald-50 border border-emerald-200 mb-6">
+                    <div class="flex items-center gap-2 mb-1">
+                      <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-emerald-600 text-white font-black text-xs uppercase">
+                        100% GRATUITO
+                      </span>
                     </div>
-                  }
-                  <div class="flex items-baseline gap-1 mt-1">
-                    <span class="text-sm font-bold text-slate-700">R$</span>
-                    <span class="text-3xl sm:text-4xl font-black text-[#082B5C] font-mono tracking-tight">
-                      {{ prod.price | number:'1.2-2' }}
-                    </span>
-                    <span class="text-xs text-slate-500 ml-2">à vista no Pix ou cartão</span>
+                    <div class="text-2xl sm:text-3xl font-black text-emerald-800 font-display tracking-tight">
+                      MATERIAL GRATUITO
+                    </div>
+                    <div class="text-xs text-emerald-700 font-medium mt-1">
+                      Envio gratuito e imediato pelo WhatsApp sem custo nenhum.
+                    </div>
                   </div>
-                  <div class="text-[11px] text-emerald-700 font-medium mt-1">
-                    ou em até 4x no cartão de crédito
+                } @else {
+                  <div class="p-5 rounded-2xl bg-[#F6F8FA] border border-slate-200 mb-6">
+                    @if (prod.originalPrice) {
+                      <div class="text-xs text-slate-400 line-through">
+                        De R$ {{ prod.originalPrice | number:'1.2-2' }} por apenas
+                      </div>
+                    }
+                    <div class="flex items-baseline gap-1 mt-1">
+                      <span class="text-sm font-bold text-slate-700">R$</span>
+                      <span class="text-3xl sm:text-4xl font-black text-[#082B5C] font-mono tracking-tight">
+                        {{ prod.price | number:'1.2-2' }}
+                      </span>
+                      <span class="text-xs text-slate-500 ml-2">à vista no Pix ou cartão</span>
+                    </div>
+                    <div class="text-[11px] text-emerald-700 font-medium mt-1">
+                      ou em até 4x no cartão de crédito
+                    </div>
                   </div>
-                </div>
+                }
 
-                <!-- Button: Direct Kiwify Buy Now or EM BREVE -->
+                <!-- Button: Direct Kiwify Buy Now, WhatsApp Free Request, or EM BREVE -->
                 <div class="mb-6">
-                  @if (prod.isComingSoon) {
+                  @if (prod.price === 0) {
+                    <a
+                      [href]="prod.kiwifyCheckoutUrl"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="w-full py-4 px-6 bg-[#25D366] hover:bg-[#1EBE5D] text-slate-950 font-display font-black text-sm sm:text-base rounded-xl transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5 cursor-pointer flex items-center justify-center gap-2.5 text-center uppercase tracking-wider"
+                    >
+                      <svg class="w-6 h-6 fill-current shrink-0" viewBox="0 0 24 24">
+                        <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.698.077-2.022-.472-1.688-.7-2.775-2.42-2.859-2.533-.084-.113-.683-.907-.683-1.731 0-.824.432-1.229.586-1.398.154-.17.336-.212.449-.212.112 0 .225.001.323.006.103.005.241-.039.377.29.144.35.488 1.19.531 1.277.043.088.072.19.014.305-.058.115-.088.187-.174.288-.087.101-.183.226-.261.304-.087.087-.178.182-.077.355.101.174.45 1.741 1.543 2.128.324.115.597.184.802.249.325.103.621.089.855.054.261-.039.805-.329.919-.646.114-.317.114-.588.08-.646-.034-.058-.124-.093-.268-.164z"/>
+                        <path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2.05 22l4.982-1.307A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.167c-1.614 0-3.12-.442-4.417-1.211l-.317-.188-2.969.779.792-2.894-.207-.329A8.132 8.132 0 013.833 12c0-4.503 3.664-8.167 8.167-8.167 4.503 0 8.167 3.664 8.167 8.167 0 4.503-3.664 8.167-8.167 8.167z"/>
+                      </svg>
+                      <span>Quero Receber Meu Material Gratuito</span>
+                    </a>
+                    <div class="text-center mt-2 flex items-center justify-center gap-1.5 text-[11px] text-slate-500">
+                      <mat-icon class="!text-sm text-emerald-600">verified</mat-icon>
+                      <span>Envio Gratuito e Imediato pelo WhatsApp · Sem Custos</span>
+                    </div>
+                  } @else if (prod.isComingSoon) {
                     <div class="w-full py-4 px-6 bg-slate-100 border border-slate-300 text-slate-700 font-display font-bold text-sm sm:text-base rounded-xl flex items-center justify-center gap-2 text-center shadow-xs">
                       <mat-icon class="!text-xl text-amber-600">hourglass_top</mat-icon>
                       <span class="uppercase tracking-wider font-extrabold text-[#082B5C]">PRODUTO EM PRODUÇÃO • EM BREVE</span>
